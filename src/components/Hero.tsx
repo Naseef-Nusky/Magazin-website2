@@ -1,26 +1,13 @@
 import { Link } from 'react-router-dom'
-import { heroSide } from '../data/articles'
+import { heroSide, postPath } from '../data/articles'
 import type { Post } from '../data/articles'
 import { CategoryBadge } from './CategoryBadge'
 import { FeaturedSlider } from './FeaturedSlider'
 
-function categoryPath(post: Post) {
-  const label = post.categories[0]?.label.toLowerCase() ?? ''
-  if (label.includes('tech')) return '/category/technology'
-  if (label.includes('fashion')) return '/category/fashion'
-  if (label.includes('travel')) return '/category/travel'
-  if (label.includes('health')) return '/category/health'
-  if (label.includes('food')) return '/category/food'
-  if (label.includes('culture')) return '/category/culture'
-  if (label.includes('lifestyle')) return '/category/lifestyle'
-  if (label.includes('world')) return '/category/culture'
-  return '/category/lifestyle'
-}
-
 function OverlayCard({ post }: { post: Post }) {
   return (
     <Link
-      to={categoryPath(post)}
+      to={postPath(post.id)}
       className="group relative block h-full min-h-[180px] overflow-hidden"
     >
       <img

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { postPath } from '../../data/articles'
 import type { Post } from '../../data/articles'
 import type { CategoryMeta } from '../../data/pages'
 import { Badges, EmptyState, Meta } from './shared'
@@ -29,7 +31,7 @@ export function TravelLayout({ category, posts }: Props) {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
-        <a href={`#${feature.id}`} className="group grid gap-6 border-b border-line pb-10 lg:grid-cols-12">
+        <Link to={postPath(feature.id)} className="group grid gap-6 border-b border-line pb-10 lg:grid-cols-12">
           <div className="lg:col-span-8">
             <Badges post={feature} />
             <h2 className="font-display text-3xl font-semibold leading-tight transition group-hover:text-brand">
@@ -43,13 +45,13 @@ export function TravelLayout({ category, posts }: Props) {
           <div className="flex items-end lg:col-span-4 lg:justify-end">
             <span className="text-xs font-bold tracking-wide text-brand uppercase">Featured route →</span>
           </div>
-        </a>
+        </Link>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {rest.map((post) => (
-            <a
+            <Link
               key={post.id}
-              href={`#${post.id}`}
+              to={postPath(post.id)}
               className="group relative block min-h-[260px] overflow-hidden"
             >
               <img
@@ -65,7 +67,7 @@ export function TravelLayout({ category, posts }: Props) {
                 </h3>
                 <Meta post={post} />
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </section>

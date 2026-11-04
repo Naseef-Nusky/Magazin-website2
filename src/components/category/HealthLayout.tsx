@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { postPath } from '../../data/articles'
 import type { Post } from '../../data/articles'
 import type { CategoryMeta } from '../../data/pages'
 import { Badges, EmptyState, Meta } from './shared'
@@ -26,8 +28,8 @@ export function HealthLayout({ category, posts }: Props) {
       </section>
 
       <section className="mx-auto max-w-5xl px-4 pb-8 sm:px-6">
-        <a
-          href={`#${feature.id}`}
+        <Link
+          to={postPath(feature.id)}
           className="group grid overflow-hidden bg-white shadow-sm sm:grid-cols-2"
         >
           <img src={feature.image} alt="" className="aspect-[4/3] h-full w-full object-cover" />
@@ -41,16 +43,16 @@ export function HealthLayout({ category, posts }: Props) {
             )}
             <Meta post={feature} />
           </div>
-        </a>
+        </Link>
       </section>
 
       <section className="mx-auto grid max-w-5xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-2">
         {[left, right].map((column, colIndex) => (
           <div key={colIndex} className="space-y-5">
             {column.map((post) => (
-              <a
+              <Link
                 key={post.id}
-                href={`#${post.id}`}
+                to={postPath(post.id)}
                 className="group flex gap-4 border-b border-[#d9e3d9] pb-5 last:border-0"
               >
                 {post.image && (
@@ -62,7 +64,7 @@ export function HealthLayout({ category, posts }: Props) {
                   </h3>
                   <Meta post={post} />
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         ))}

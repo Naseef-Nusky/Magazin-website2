@@ -480,5 +480,25 @@ export function getPostsByCategorySlug(slug: string): Post[] {
   )
 }
 
+export function getPostById(id: string) {
+  return allPosts.find((post) => post.id === id)
+}
+
+export function postPath(id: string) {
+  return `/blog/${id}`
+}
+
+export function getRelatedPosts(post: Post, limit = 3) {
+  const labels = new Set(post.categories.map((c) => c.label.toLowerCase()))
+  return allPosts
+    .filter(
+      (candidate) =>
+        candidate.id !== post.id &&
+        candidate.image &&
+        candidate.categories.some((c) => labels.has(c.label.toLowerCase())),
+    )
+    .slice(0, limit)
+}
+
 export const footerTrending: Post[] = trendingPosts.slice(1, 4)
 export const footerPopular: Post[] = mostRead.slice(0, 3)

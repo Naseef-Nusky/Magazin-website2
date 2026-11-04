@@ -1,4 +1,5 @@
-import { mostRead } from '../data/articles'
+import { Link } from 'react-router-dom'
+import { mostRead , postPath} from '../data/articles'
 import { SectionTitle } from './SectionTitle'
 
 export function MostRead() {
@@ -8,7 +9,7 @@ export function MostRead() {
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {mostRead.map((post) => (
           <article key={post.id}>
-            <a href={`#${post.id}`} className="group block">
+            <Link to={postPath(post.id)} className="group block">
               <div className="mb-3 overflow-hidden">
                 <img
                   src={post.image}
@@ -20,7 +21,7 @@ export function MostRead() {
                 {post.title}
               </h3>
               <time className="mt-1.5 block text-[11px] text-muted">{post.date}</time>
-            </a>
+            </Link>
           </article>
         ))}
       </div>

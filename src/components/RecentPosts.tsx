@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom'
 import {
   recentFeature,
   recentGrid,
   recentList,
   recentWide,
+  postPath,
 } from '../data/articles'
 import { CategoryBadge } from './CategoryBadge'
 import { SectionTitle } from './SectionTitle'
@@ -12,7 +14,7 @@ export function RecentPosts() {
     <div>
       <SectionTitle>Recent Posts</SectionTitle>
 
-      <a href={`#${recentFeature.id}`} className="group mb-6 block">
+      <Link to={postPath(recentFeature.id)} className="group mb-6 block">
         <div className="mb-4 overflow-hidden">
           <img
             src={recentFeature.image}
@@ -32,12 +34,12 @@ export function RecentPosts() {
         <p className="mt-2 text-[11px] text-muted">
           {recentFeature.author} · {recentFeature.date}
         </p>
-      </a>
+      </Link>
 
       <ul className="mb-8 grid gap-4 sm:grid-cols-2">
         {recentList.map((post) => (
           <li key={post.id}>
-            <a href={`#${post.id}`} className="group flex gap-3">
+            <Link to={postPath(post.id)} className="group flex gap-3">
               <img src={post.image} alt="" className="h-20 w-24 shrink-0 object-cover" />
               <div className="min-w-0">
                 <div className="mb-1">
@@ -50,12 +52,12 @@ export function RecentPosts() {
                 </h4>
                 <time className="mt-1 block text-[11px] text-muted">{post.date}</time>
               </div>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
 
-      <a href={`#${recentWide.id}`} className="group relative mb-8 block min-h-[280px] overflow-hidden">
+      <Link to={postPath(recentWide.id)} className="group relative mb-8 block min-h-[280px] overflow-hidden">
         <img
           src={recentWide.image}
           alt=""
@@ -73,12 +75,12 @@ export function RecentPosts() {
           </h3>
           <p className="mt-2 max-w-xl text-sm text-white/75">{recentWide.excerpt}</p>
         </div>
-      </a>
+      </Link>
 
       <div className="grid gap-5 sm:grid-cols-2">
         {recentGrid.map((post) => (
           <article key={post.id}>
-            <a href={`#${post.id}`} className="group block">
+            <Link to={postPath(post.id)} className="group block">
               <div className="mb-3 overflow-hidden">
                 <img
                   src={post.image}
@@ -97,7 +99,7 @@ export function RecentPosts() {
               <p className="mt-1.5 text-[11px] text-muted">
                 {post.author} · {post.date}
               </p>
-            </a>
+            </Link>
           </article>
         ))}
       </div>

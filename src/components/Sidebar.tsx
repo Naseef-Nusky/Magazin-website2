@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { popularCategories, trendingPosts } from '../data/articles'
+import { popularCategories, trendingPosts , postPath} from '../data/articles'
 import { SectionTitle } from './SectionTitle'
 import { CategoryBadge } from './CategoryBadge'
 
@@ -17,7 +17,7 @@ export function Sidebar() {
     <aside className="space-y-8">
       <div>
         <SectionTitle>Trending Post</SectionTitle>
-        <a href={`#${featured.id}`} className="group mb-4 block">
+        <Link to={postPath(featured.id)} className="group mb-4 block">
           <div className="relative mb-3 overflow-hidden">
             <img
               src={featured.image}
@@ -37,11 +37,11 @@ export function Sidebar() {
             {featured.title}
           </h3>
           <time className="mt-1 block text-[11px] text-muted">{featured.date}</time>
-        </a>
+        </Link>
         <ul className="divide-y divide-line">
           {rest.map((post) => (
             <li key={post.id} className="py-3">
-              <a href={`#${post.id}`} className="group flex gap-3">
+              <Link to={postPath(post.id)} className="group flex gap-3">
                 <img src={post.image} alt="" className="h-16 w-16 shrink-0 object-cover" />
                 <div className="min-w-0">
                   <h4 className="font-display text-sm font-semibold leading-snug transition group-hover:text-brand">
@@ -49,7 +49,7 @@ export function Sidebar() {
                   </h4>
                   <time className="mt-1 block text-[11px] text-muted">{post.date}</time>
                 </div>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

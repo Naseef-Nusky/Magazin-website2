@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { postPath } from '../../data/articles'
 import type { Post } from '../../data/articles'
 import type { CategoryMeta } from '../../data/pages'
 import { Badges, EmptyState, Meta } from './shared'
@@ -21,8 +23,8 @@ export function LifestyleLayout({ category, posts }: Props) {
 
         <div className="mt-10 grid auto-rows-[180px] gap-4 sm:auto-rows-[220px] sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[240px]">
           {a && (
-            <a
-              href={`#${a.id}`}
+            <Link
+              to={postPath(a.id)}
               className="group relative overflow-hidden sm:col-span-2 sm:row-span-2"
             >
               <img
@@ -38,10 +40,10 @@ export function LifestyleLayout({ category, posts }: Props) {
                 </h2>
                 <Meta post={a} />
               </div>
-            </a>
+            </Link>
           )}
           {b && (
-            <a href={`#${b.id}`} className="group relative overflow-hidden lg:col-span-2">
+            <Link to={postPath(b.id)} className="group relative overflow-hidden lg:col-span-2">
               <img
                 src={b.image}
                 alt=""
@@ -51,10 +53,10 @@ export function LifestyleLayout({ category, posts }: Props) {
               <div className="absolute inset-x-0 bottom-0 p-4">
                 <h3 className="font-display text-lg font-semibold text-white">{b.title}</h3>
               </div>
-            </a>
+            </Link>
           )}
           {c && (
-            <a href={`#${c.id}`} className="group relative overflow-hidden lg:col-span-2">
+            <Link to={postPath(c.id)} className="group relative overflow-hidden lg:col-span-2">
               <img
                 src={c.image}
                 alt=""
@@ -64,7 +66,7 @@ export function LifestyleLayout({ category, posts }: Props) {
               <div className="absolute inset-x-0 bottom-0 p-4">
                 <h3 className="font-display text-lg font-semibold text-white">{c.title}</h3>
               </div>
-            </a>
+            </Link>
           )}
         </div>
       </section>
@@ -73,7 +75,7 @@ export function LifestyleLayout({ category, posts }: Props) {
         <section className="border-t border-[#ebe4d8] bg-white">
           <div className="mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
             {rest.map((post) => (
-              <a key={post.id} href={`#${post.id}`} className="group block">
+              <Link key={post.id} to={postPath(post.id)} className="group block">
                 {post.image && (
                   <img
                     src={post.image}
@@ -85,7 +87,7 @@ export function LifestyleLayout({ category, posts }: Props) {
                   {post.title}
                 </h3>
                 <Meta post={post} />
-              </a>
+              </Link>
             ))}
           </div>
         </section>

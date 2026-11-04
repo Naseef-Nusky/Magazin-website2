@@ -1,4 +1,5 @@
-import { footerPopular, footerTrending } from '../data/articles'
+import { Link } from 'react-router-dom'
+import { footerPopular, footerTrending , postPath} from '../data/articles'
 
 function FooterPostList({
   title,
@@ -15,7 +16,7 @@ function FooterPostList({
       <ul className="space-y-4">
         {posts.map((post) => (
           <li key={post.id}>
-            <a href={`#${post.id}`} className="group flex gap-3">
+            <Link to={postPath(post.id)} className="group flex gap-3">
               <img src={post.image} alt="" className="h-14 w-14 shrink-0 object-cover" />
               <div className="min-w-0">
                 <h4 className="text-sm leading-snug text-white/90 transition group-hover:text-brand">
@@ -23,7 +24,7 @@ function FooterPostList({
                 </h4>
                 <time className="mt-1 block text-[11px] text-white/45">{post.date}</time>
               </div>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -41,7 +42,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-4 text-[11px] text-white/45 sm:flex-row sm:px-6">
-          <p>© {new Date().getFullYear()} MagZone. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Mazgazin2. All rights reserved.</p>
           <p>Culture · Tech · Lifestyle</p>
         </div>
       </div>

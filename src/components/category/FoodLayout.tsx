@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { postPath } from '../../data/articles'
 import type { Post } from '../../data/articles'
 import type { CategoryMeta } from '../../data/pages'
 import { Badges, EmptyState, Meta } from './shared'
@@ -23,7 +25,7 @@ export function FoodLayout({ category, posts }: Props) {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
-        <a href={`#${feature.id}`} className="group grid gap-6 lg:grid-cols-12 lg:items-end">
+        <Link to={postPath(feature.id)} className="group grid gap-6 lg:grid-cols-12 lg:items-end">
           <img
             src={feature.image}
             alt=""
@@ -39,13 +41,13 @@ export function FoodLayout({ category, posts }: Props) {
             )}
             <Meta post={feature} />
           </div>
-        </a>
+        </Link>
 
         <div className="mt-12 space-y-6">
           {rest.map((post) => (
-            <a
+            <Link
               key={post.id}
-              href={`#${post.id}`}
+              to={postPath(post.id)}
               className="group grid gap-5 border border-[#f0e0d0] bg-white p-3 sm:grid-cols-12 sm:p-4"
             >
               {post.image && (
@@ -65,7 +67,7 @@ export function FoodLayout({ category, posts }: Props) {
                 )}
                 <Meta post={post} />
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </section>

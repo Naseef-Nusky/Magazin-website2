@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { postPath } from '../../data/articles'
 import type { Post } from '../../data/articles'
 import type { CategoryMeta } from '../../data/pages'
 import { Badges, EmptyState, Meta } from './shared'
@@ -25,7 +27,7 @@ export function TechnologyLayout({ category, posts }: Props) {
               <span>Updated weekly</span>
             </div>
           </div>
-          <a href={`#${feature.id}`} className="group relative block min-h-[320px] overflow-hidden lg:col-span-7">
+          <Link to={postPath(feature.id)} className="group relative block min-h-[320px] overflow-hidden lg:col-span-7">
             <img
               src={feature.image}
               alt=""
@@ -39,7 +41,7 @@ export function TechnologyLayout({ category, posts }: Props) {
               </h2>
               <Meta post={feature} />
             </div>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -47,7 +49,7 @@ export function TechnologyLayout({ category, posts }: Props) {
         <ul className="divide-y divide-white/10">
           {rest.map((post, i) => (
             <li key={post.id}>
-              <a href={`#${post.id}`} className="group grid gap-4 py-6 sm:grid-cols-12 sm:items-center">
+              <Link to={postPath(post.id)} className="group grid gap-4 py-6 sm:grid-cols-12 sm:items-center">
                 <span className="font-mono text-sm text-brand sm:col-span-1">
                   {String(i + 2).padStart(2, '0')}
                 </span>
@@ -67,7 +69,7 @@ export function TechnologyLayout({ category, posts }: Props) {
                     className="aspect-[16/10] w-full object-cover sm:col-span-4"
                   />
                 ) : null}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

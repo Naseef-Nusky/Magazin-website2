@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { postPath } from '../../data/articles'
 import type { Post } from '../../data/articles'
 import type { CategoryMeta } from '../../data/pages'
 import { Badges, EmptyState, Meta } from './shared'
@@ -27,7 +29,7 @@ export function CultureLayout({ category, posts }: Props) {
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-12">
-        <a href={`#${feature.id}`} className="group lg:col-span-7">
+        <Link to={postPath(feature.id)} className="group lg:col-span-7">
           <img src={feature.image} alt="" className="aspect-[16/11] w-full object-cover" />
           <div className="mt-4">
             <Badges post={feature} />
@@ -39,7 +41,7 @@ export function CultureLayout({ category, posts }: Props) {
             )}
             <Meta post={feature} />
           </div>
-        </a>
+        </Link>
 
         <div className="lg:col-span-5">
           <p className="mb-4 text-[11px] font-bold tracking-[0.25em] text-brand uppercase">
@@ -48,7 +50,7 @@ export function CultureLayout({ category, posts }: Props) {
           <ul className="divide-y divide-line border-y border-line">
             {rest.map((post, i) => (
               <li key={post.id}>
-                <a href={`#${post.id}`} className="group flex items-center gap-4 py-5">
+                <Link to={postPath(post.id)} className="group flex items-center gap-4 py-5">
                   <span className="w-6 shrink-0 font-display text-2xl font-bold text-line transition group-hover:text-brand">
                     {i + 1}
                   </span>
@@ -65,7 +67,7 @@ export function CultureLayout({ category, posts }: Props) {
                     </h3>
                     <Meta post={post} />
                   </div>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

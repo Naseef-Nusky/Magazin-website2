@@ -46,7 +46,7 @@ export function FeaturedSlider() {
               {item.title}
             </h3>
             <p className="mt-3 text-xs font-semibold tracking-wide text-white/80 uppercase">
-              Open {item.category} →
+              Read full story →
             </p>
           </div>
         </Link>

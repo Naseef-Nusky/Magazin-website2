@@ -1,47 +1,52 @@
 export const heroSlides = [
   {
     id: 'slide-health',
+    postId: 'hero-main',
     title: 'Thriving, Not Just Surviving: A Blueprint for a Healthy Lifestyle',
     category: 'Health',
-    to: '/category/health',
+    to: '/blog/hero-main',
     image:
       'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80',
     tone: 'red' as const,
   },
   {
     id: 'slide-tech',
+    postId: 'hero-side-3',
     title: 'AI Tools That Actually Save Creators Time',
     category: 'Technology',
-    to: '/category/technology',
+    to: '/blog/hero-side-3',
     image:
       'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
     tone: 'blue' as const,
   },
   {
     id: 'slide-travel',
+    postId: 'edit-1',
     title: 'Coastal Escapes Worth Booking This Season',
     category: 'Travel',
-    to: '/category/travel',
+    to: '/blog/edit-1',
     image:
       'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
     tone: 'teal' as const,
   },
   {
     id: 'slide-fashion',
+    postId: 'grid-3',
     title: 'Fashion Capsules That Travel Light',
     category: 'Fashion',
-    to: '/category/fashion',
+    to: '/blog/grid-3',
     image:
       'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80',
     tone: 'red' as const,
   },
   {
     id: 'slide-culture',
+    postId: 'grid-4',
     title: 'Music Festivals Shaping Summer Culture',
     category: 'Culture',
-    to: '/category/culture',
+    to: '/blog/grid-4',
     image:
-      'https://images.unsplash.com/photo-1459749411175-04bf529877ce?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1200&q=80',
     tone: 'purple' as const,
   },
 ]

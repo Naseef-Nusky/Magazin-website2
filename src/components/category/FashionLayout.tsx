@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { postPath } from '../../data/articles'
 import type { Post } from '../../data/articles'
 import type { CategoryMeta } from '../../data/pages'
 import { Badges, EmptyState, Meta } from './shared'
@@ -42,8 +43,8 @@ export function FashionLayout({ category, posts }: Props) {
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-0 px-4 py-10 sm:px-6 lg:grid-cols-12 lg:gap-8">
-        <a
-          href={`#${feature.id}`}
+        <Link
+          to={postPath(feature.id)}
           className="group relative block min-h-[520px] overflow-hidden lg:col-span-7"
         >
           <img
@@ -61,7 +62,7 @@ export function FashionLayout({ category, posts }: Props) {
             </h2>
             <Meta post={feature} />
           </div>
-        </a>
+        </Link>
 
         <div className="flex flex-col justify-between border border-ink/10 bg-white p-6 lg:col-span-5 lg:p-8">
           <div>
@@ -71,7 +72,7 @@ export function FashionLayout({ category, posts }: Props) {
             <ul className="mt-6 divide-y divide-ink/10">
               {list.map((post, i) => (
                 <li key={post.id}>
-                  <a href={`#${post.id}`} className="group flex gap-4 py-4">
+                  <Link to={postPath(post.id)} className="group flex gap-4 py-4">
                     <span className="font-display text-2xl font-bold text-ink/20 transition group-hover:text-brand">
                       {String(i + 1).padStart(2, '0')}
                     </span>
@@ -81,7 +82,7 @@ export function FashionLayout({ category, posts }: Props) {
                       </h3>
                       <Meta post={post} />
                     </div>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -144,9 +145,9 @@ export function FashionLayout({ category, posts }: Props) {
 
           <div className="relative min-h-[360px] overflow-hidden lg:col-span-8">
             {runway.map((post, i) => (
-              <a
+              <Link
                 key={post.id}
-                href={`#${post.id}`}
+                to={postPath(post.id)}
                 className={`absolute inset-0 block transition-opacity duration-700 ${
                   i === runwayIndex ? 'opacity-100' : 'pointer-events-none opacity-0'
                 }`}
@@ -164,7 +165,7 @@ export function FashionLayout({ category, posts }: Props) {
                   </h3>
                   <Meta post={post} />
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -189,9 +190,9 @@ export function FashionLayout({ category, posts }: Props) {
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {gallery.map((post, i) => (
-              <a
+              <Link
                 key={post.id}
-                href={`#${post.id}`}
+                to={postPath(post.id)}
                 className={`group block ${i % 2 === 1 ? 'lg:mt-10' : ''}`}
               >
                 {post.image && (
@@ -208,7 +209,7 @@ export function FashionLayout({ category, posts }: Props) {
                   {post.title}
                 </h3>
                 <Meta post={post} />
-              </a>
+              </Link>
             ))}
           </div>
         </section>

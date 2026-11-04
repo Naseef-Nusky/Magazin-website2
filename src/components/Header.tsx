@@ -1,73 +1,105 @@
-import { Link, NavLink } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { categories } from '../data/pages'
-import { SocialIcons } from './SocialIcons'
+
+const linkClass = ({ isActive }: { isActive: boolean }) =>
+  `block px-4 py-3 text-sm font-semibold transition hover:text-brand lg:inline-block lg:px-3 lg:py-3.5 ${
+    isActive ? 'text-brand' : 'text-ink'
+  }`
 
 export function Header() {
+  const [open, setOpen] = useState(false)
+  const location = useLocation()
+
+  useEffect(() => {
+    setOpen(false)
+  }, [location.pathname])
+
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [open])
+
   return (
-    <header>
-      <div className="bg-brand text-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6">
-          <SocialIcons size={13} />
-          <p className="hidden text-[11px] tracking-wide sm:block">
-            Your daily dose of culture, tech & lifestyle
-          </p>
-        </div>
-      </div>
+    <header className="sticky top-0 z-50 border-b border-line bg-white shadow-sm">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+        <Link to="/" className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
+          <span className="text-brand">Maz</span>
+          <span className="text-ink">gazin2</span>
+        </Link>
 
-      <div className="border-b border-line bg-white">
-        <div className="mx-auto flex max-w-7xl items-center px-4 py-5 sm:px-6">
-          <Link to="/" className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            <span className="text-brand">Mag</span>
-            <span className="text-ink">Zone</span>
-          </Link>
-        </div>
-      </div>
-
-      <nav className="sticky top-0 z-40 border-b border-line bg-white shadow-sm" aria-label="Primary">
-        <div className="mx-auto flex max-w-7xl items-center px-4 sm:px-6">
-          <ul className="flex items-center gap-0 overflow-x-auto text-[13px] font-semibold text-ink">
-            <li className="shrink-0 pr-1">
-              <NavLink
-                to="/"
-                end
-                aria-label="Home"
-                className={({ isActive }) =>
-                  `inline-flex p-3 transition ${isActive ? 'text-brand' : 'text-ink/70 hover:text-brand'}`
-                }
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                  <path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3l9-8z" />
-                </svg>
-              </NavLink>
-            </li>
-            <li className="shrink-0">
-              <NavLink
-                to="/"
-                end
-                className={({ isActive }) =>
-                  `inline-block px-3 py-3.5 transition hover:text-brand ${isActive ? 'text-brand' : ''}`
-                }
-              >
+        {/* Desktop nav */}
+        <nav className="hidden items-center lg:flex" aria-label="Primary">
+          <ul className="flex items-center text-[13px] font-semibold text-ink">
+            <li>
+              <NavLink to="/" end className={linkClass}>
                 Home
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/blog" className={linkClass}>
+                All Blogs
+              </NavLink>
+            </li>
             {categories.map((category) => (
-              <li key={category.slug} className="shrink-0">
-                <NavLink
-                  to={`/category/${category.slug}`}
-                  className={({ isActive }) =>
-                    `inline-block px-3 py-3.5 transition hover:text-brand ${
-                      isActive ? 'text-brand' : ''
-                    }`
-                  }
-                >
+              <li key={category.slug}>
+                <NavLink to={`/category/${category.slug}`} className={linkClass}>
                   {category.label}
                 </NavLink>
               </li>
             ))}
           </ul>
-        </div>
-      </nav>
+        </nav>
+
+        {/* Mobile menu button */}
+        <button
+          type="button"
+          className="inline-flex h-10 w-10 items-center justify-center border border-line text-ink transition hover:border-brand hover:text-brand lg:hidden"
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-expanded={open}
+          onClick={() => setOpen((value) => !value)}
+        >
+          {open ? (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
+            </svg>
+          ) : (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
+            </svg>
+          )}
+        </button>
+      </div>
+
+      {/* Mobile menu panel */}
+      {open && (
+        <nav
+          className="border-t border-line bg-white lg:hidden"
+          aria-label="Mobile"
+        >
+          <ul className="mx-auto max-h-[calc(100svh-4.5rem)] max-w-7xl overflow-y-auto px-2 py-2">
+            <li>
+              <NavLink to="/" end className={linkClass}>
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/blog" className={linkClass}>
+                All Blogs
+              </NavLink>
+            </li>
+            {categories.map((category) => (
+              <li key={category.slug}>
+                <NavLink to={`/category/${category.slug}`} className={linkClass}>
+                  {category.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   )
 }

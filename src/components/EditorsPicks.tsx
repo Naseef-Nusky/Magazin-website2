@@ -1,4 +1,5 @@
-import { editorsPicks, editorsTextList } from '../data/articles'
+import { Link } from 'react-router-dom'
+import { editorsPicks, editorsTextList , postPath} from '../data/articles'
 import { CategoryBadge } from './CategoryBadge'
 import { SectionTitle } from './SectionTitle'
 
@@ -9,7 +10,7 @@ export function EditorsPicks() {
       <div className="grid gap-6 md:grid-cols-3">
         {editorsPicks.map((post) => (
           <article key={post.id}>
-            <a href={`#${post.id}`} className="group block">
+            <Link to={postPath(post.id)} className="group block">
               <div className="mb-3 overflow-hidden">
                 <img
                   src={post.image}
@@ -29,7 +30,7 @@ export function EditorsPicks() {
               <p className="mt-2 text-[11px] text-muted">
                 {post.author} · {post.date}
               </p>
-            </a>
+            </Link>
           </article>
         ))}
 
@@ -37,7 +38,7 @@ export function EditorsPicks() {
           <ul className="divide-y divide-line border-t border-line">
             {editorsTextList.map((post) => (
               <li key={post.id} className="py-4">
-                <a href={`#${post.id}`} className="group flex gap-3">
+                <Link to={postPath(post.id)} className="group flex gap-3">
                   {post.image ? (
                     <img
                       src={post.image}
@@ -56,7 +57,7 @@ export function EditorsPicks() {
                     </h3>
                     <time className="mt-1.5 block text-[11px] text-muted">{post.date}</time>
                   </div>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
