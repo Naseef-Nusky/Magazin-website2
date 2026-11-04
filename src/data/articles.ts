@@ -1,4 +1,4 @@
-import { getCategoryBySlug } from './pages'
+import { categories, getCategoryBySlug } from './pages'
 
 export type Tone = 'red' | 'blue' | 'green' | 'orange' | 'purple' | 'teal'
 
@@ -18,7 +18,7 @@ export const heroMain: Post = {
   date: 'March 12, 2025',
   author: 'Ava Morgan',
   image:
-    'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80',
+    '/images/posts/hero-main.jpg',
   categories: [
     { label: 'Health', tone: 'red' },
     { label: 'Lifestyle', tone: 'blue' },
@@ -31,7 +31,7 @@ export const heroSide: Post[] = [
     title: 'Cities in Motion: How Urban Culture Shapes Modern Identity',
     date: 'March 10, 2025',
     image:
-      'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80',
+      '/images/posts/hero-side-1.jpg',
     categories: [{ label: 'World', tone: 'red' }],
   },
   {
@@ -39,7 +39,7 @@ export const heroSide: Post[] = [
     title: 'The Quiet Power of Morning Rituals',
     date: 'March 9, 2025',
     image:
-      'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80',
+      '/images/posts/hero-side-2.jpg',
     categories: [{ label: 'Lifestyle', tone: 'green' }],
   },
   {
@@ -47,7 +47,7 @@ export const heroSide: Post[] = [
     title: 'AI Tools That Actually Save Creators Time',
     date: 'March 8, 2025',
     image:
-      'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80',
+      '/images/posts/hero-side-3.jpg',
     categories: [{ label: 'Technology', tone: 'blue' }],
   },
 ]
@@ -61,7 +61,7 @@ export const editorsPicks: Post[] = [
     date: 'March 7, 2025',
     author: 'Liam Chen',
     image:
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/edit-1.jpg',
     categories: [{ label: 'Travel', tone: 'teal' }],
   },
   {
@@ -72,7 +72,7 @@ export const editorsPicks: Post[] = [
     date: 'March 6, 2025',
     author: 'Nora Blake',
     image:
-      'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/edit-2.jpg',
     categories: [{ label: 'Lifestyle', tone: 'orange' }],
   },
 ]
@@ -84,7 +84,7 @@ export const editorsTextList: Post[] = [
     date: 'March 5, 2025',
     author: 'Maya Okonkwo',
     image:
-      'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80',
+      '/images/posts/edit-t1.jpg',
     categories: [{ label: 'Culture', tone: 'purple' }],
   },
   {
@@ -93,7 +93,7 @@ export const editorsTextList: Post[] = [
     date: 'March 4, 2025',
     author: 'Liam Chen',
     image:
-      'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80',
+      '/images/posts/edit-t2.jpg',
     categories: [{ label: 'Culture', tone: 'purple' }],
   },
   {
@@ -102,7 +102,7 @@ export const editorsTextList: Post[] = [
     date: 'March 3, 2025',
     author: 'Sofia Reyes',
     image:
-      'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80',
+      '/images/posts/edit-t3.jpg',
     categories: [{ label: 'Fashion', tone: 'red' }],
   },
   {
@@ -111,7 +111,7 @@ export const editorsTextList: Post[] = [
     date: 'March 2, 2025',
     author: 'Jordan Lee',
     image:
-      'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
+      '/images/posts/edit-t4.jpg',
     categories: [{ label: 'Food', tone: 'orange' }],
   },
 ]
@@ -124,7 +124,7 @@ export const recentFeature: Post = {
   date: 'March 11, 2025',
   author: 'Sofia Reyes',
   image:
-    'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1100&q=80',
+    '/images/posts/recent-feature.jpg',
   categories: [
     { label: 'Health', tone: 'red' },
     { label: 'Lifestyle', tone: 'blue' },
@@ -138,7 +138,7 @@ export const recentList: Post[] = [
     date: 'March 10, 2025',
     author: 'Jordan Lee',
     image:
-      'https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=300&q=80',
+      '/images/posts/recent-1.jpg',
     categories: [{ label: 'Food', tone: 'orange' }],
   },
   {
@@ -147,7 +147,7 @@ export const recentList: Post[] = [
     date: 'March 9, 2025',
     author: 'Maya Okonkwo',
     image:
-      'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=300&q=80',
+      '/images/posts/recent-2.jpg',
     categories: [{ label: 'Culture', tone: 'purple' }],
   },
   {
@@ -156,7 +156,7 @@ export const recentList: Post[] = [
     date: 'March 8, 2025',
     author: 'Chris Park',
     image:
-      'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=300&q=80',
+      '/images/posts/recent-3.jpg',
     categories: [{ label: 'Technology', tone: 'blue' }],
   },
   {
@@ -165,7 +165,7 @@ export const recentList: Post[] = [
     date: 'March 7, 2025',
     author: 'Elena Voss',
     image:
-      'https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=300&q=80',
+      '/images/posts/recent-4.jpg',
     categories: [{ label: 'Sports', tone: 'green' }],
   },
 ]
@@ -178,7 +178,7 @@ export const recentWide: Post = {
   date: 'March 6, 2025',
   author: 'Daniel Hart',
   image:
-    'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1100&q=80',
+    '/images/posts/recent-wide.jpg',
   categories: [
     { label: 'Travel', tone: 'teal' },
     { label: 'World', tone: 'red' },
@@ -192,7 +192,7 @@ export const recentGrid: Post[] = [
     date: 'March 5, 2025',
     author: 'Ava Morgan',
     image:
-      'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80',
+      '/images/posts/grid-1.jpg',
     categories: [{ label: 'Technology', tone: 'blue' }],
   },
   {
@@ -201,7 +201,7 @@ export const recentGrid: Post[] = [
     date: 'March 4, 2025',
     author: 'Nora Blake',
     image:
-      'https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=600&q=80',
+      '/images/posts/grid-2.jpg',
     categories: [{ label: 'Food', tone: 'orange' }],
   },
   {
@@ -210,7 +210,7 @@ export const recentGrid: Post[] = [
     date: 'March 3, 2025',
     author: 'Sofia Reyes',
     image:
-      'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80',
+      '/images/posts/grid-3.jpg',
     categories: [{ label: 'Fashion', tone: 'red' }],
   },
   {
@@ -219,7 +219,7 @@ export const recentGrid: Post[] = [
     date: 'March 2, 2025',
     author: 'Liam Chen',
     image:
-      'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=900&q=80',
+      '/images/posts/grid-4.jpg',
     categories: [{ label: 'Culture', tone: 'purple' }],
   },
 ]
@@ -230,7 +230,7 @@ export const trendingPosts: Post[] = [
     title: 'The New Rules of Remote Collaboration',
     date: 'March 11, 2025',
     image:
-      'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/trend-1.jpg',
     categories: [{ label: 'Business', tone: 'purple' }],
   },
   {
@@ -238,7 +238,7 @@ export const trendingPosts: Post[] = [
     title: 'Electric Mobility Is Changing City Streets',
     date: 'March 10, 2025',
     image:
-      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80',
+      '/images/posts/trend-2.jpg',
     categories: [{ label: 'Technology', tone: 'blue' }],
   },
   {
@@ -246,7 +246,7 @@ export const trendingPosts: Post[] = [
     title: 'Mindful Eating Without the Rules',
     date: 'March 9, 2025',
     image:
-      'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600&q=80',
+      '/images/posts/trend-3.jpg',
     categories: [{ label: 'Food', tone: 'orange' }],
   },
   {
@@ -254,7 +254,7 @@ export const trendingPosts: Post[] = [
     title: 'Architecture That Invites the Outside In',
     date: 'March 8, 2025',
     image:
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80',
+      '/images/posts/trend-4.jpg',
     categories: [{ label: 'Lifestyle', tone: 'green' }],
   },
   {
@@ -263,19 +263,10 @@ export const trendingPosts: Post[] = [
     date: 'March 7, 2025',
     author: 'Maya Okonkwo',
     image:
-      'https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=900&q=80',
+      '/images/posts/trend-5.jpg',
     categories: [{ label: 'Culture', tone: 'purple' }],
   },
 ]
-
-export const popularCategories = [
-  { name: 'Technology', slug: 'technology', count: 42 },
-  { name: 'Fashion', slug: 'fashion', count: 28 },
-  { name: 'Travel', slug: 'travel', count: 35 },
-  { name: 'Health', slug: 'health', count: 31 },
-  { name: 'Food', slug: 'food', count: 24 },
-  { name: 'Culture', slug: 'culture', count: 19 },
-] as const
 
 export const mostRead: Post[] = [
   {
@@ -283,7 +274,7 @@ export const mostRead: Post[] = [
     title: 'A Practical Guide to Building Better Habits',
     date: 'March 1, 2025',
     image:
-      'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=400&q=80',
+      '/images/posts/most-1.jpg',
     categories: [{ label: 'Lifestyle', tone: 'green' }],
   },
   {
@@ -291,7 +282,7 @@ export const mostRead: Post[] = [
     title: 'Hidden Museums Every Traveler Should Visit',
     date: 'February 28, 2025',
     image:
-      'https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=400&q=80',
+      '/images/posts/most-2.jpg',
     categories: [{ label: 'Travel', tone: 'teal' }],
   },
   {
@@ -299,7 +290,7 @@ export const mostRead: Post[] = [
     title: 'Coffee Culture Beyond the Latte',
     date: 'February 27, 2025',
     image:
-      'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80',
+      '/images/posts/most-3.jpg',
     categories: [{ label: 'Food', tone: 'orange' }],
   },
   {
@@ -307,7 +298,7 @@ export const mostRead: Post[] = [
     title: 'What Founders Get Wrong About Brand Voice',
     date: 'February 26, 2025',
     image:
-      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80',
+      '/images/posts/most-4.jpg',
     categories: [{ label: 'Culture', tone: 'purple' }],
   },
 ]
@@ -320,7 +311,7 @@ export const categoryExtras: Post[] = [
     date: 'March 5, 2025',
     author: 'Chris Park',
     image:
-      'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/tech-extra-1.jpg',
     categories: [{ label: 'Technology', tone: 'blue' }],
   },
   {
@@ -330,7 +321,7 @@ export const categoryExtras: Post[] = [
     date: 'March 4, 2025',
     author: 'Sofia Reyes',
     image:
-      'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/fashion-extra-1.jpg',
     categories: [{ label: 'Fashion', tone: 'red' }],
   },
   {
@@ -339,7 +330,7 @@ export const categoryExtras: Post[] = [
     date: 'March 1, 2025',
     author: 'Nora Blake',
     image:
-      'https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/fashion-extra-2.jpg',
     categories: [{ label: 'Fashion', tone: 'red' }],
   },
   {
@@ -349,7 +340,7 @@ export const categoryExtras: Post[] = [
     date: 'March 3, 2025',
     author: 'Daniel Hart',
     image:
-      'https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/travel-extra-1.jpg',
     categories: [{ label: 'Travel', tone: 'teal' }],
   },
   {
@@ -359,7 +350,7 @@ export const categoryExtras: Post[] = [
     date: 'March 2, 2025',
     author: 'Elena Voss',
     image:
-      'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/health-extra-1.jpg',
     categories: [{ label: 'Health', tone: 'red' }],
   },
   {
@@ -368,7 +359,7 @@ export const categoryExtras: Post[] = [
     date: 'February 25, 2025',
     author: 'Jordan Lee',
     image:
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/food-extra-1.jpg',
     categories: [{ label: 'Food', tone: 'orange' }],
   },
   {
@@ -377,7 +368,7 @@ export const categoryExtras: Post[] = [
     date: 'February 24, 2025',
     author: 'Maya Okonkwo',
     image:
-      'https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/culture-extra-1.jpg',
     categories: [{ label: 'Culture', tone: 'purple' }],
   },
   {
@@ -387,7 +378,7 @@ export const categoryExtras: Post[] = [
     date: 'February 23, 2025',
     author: 'Ava Morgan',
     image:
-      'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/lifestyle-extra-1.jpg',
     categories: [{ label: 'Lifestyle', tone: 'green' }],
   },
   {
@@ -396,7 +387,7 @@ export const categoryExtras: Post[] = [
     date: 'February 20, 2025',
     author: 'Liam Chen',
     image:
-      'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/lifestyle-extra-2.jpg',
     categories: [{ label: 'Lifestyle', tone: 'green' }],
   },
   {
@@ -406,7 +397,7 @@ export const categoryExtras: Post[] = [
     date: 'February 22, 2025',
     author: 'Nora Blake',
     image:
-      'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80',
+      '/images/posts/fashion-extra-3.jpg',
     categories: [{ label: 'Fashion', tone: 'red' }],
   },
   {
@@ -415,7 +406,7 @@ export const categoryExtras: Post[] = [
     date: 'February 18, 2025',
     author: 'Sofia Reyes',
     image:
-      'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=800&q=80',
+      '/images/posts/fashion-extra-4.jpg',
     categories: [{ label: 'Fashion', tone: 'red' }],
   },
   {
@@ -424,7 +415,7 @@ export const categoryExtras: Post[] = [
     date: 'February 15, 2025',
     author: 'Ava Morgan',
     image:
-      'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80',
+      '/images/posts/fashion-extra-5.jpg',
     categories: [{ label: 'Fashion', tone: 'red' }],
   },
   {
@@ -433,7 +424,7 @@ export const categoryExtras: Post[] = [
     date: 'February 14, 2025',
     author: 'Elena Voss',
     image:
-      'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80',
+      '/images/posts/health-extra-2.jpg',
     categories: [{ label: 'Health', tone: 'red' }],
   },
   {
@@ -442,7 +433,7 @@ export const categoryExtras: Post[] = [
     date: 'February 12, 2025',
     author: 'Chris Park',
     image:
-      'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
+      '/images/posts/tech-extra-2.jpg',
     categories: [{ label: 'Technology', tone: 'blue' }],
   },
   {
@@ -451,7 +442,7 @@ export const categoryExtras: Post[] = [
     date: 'February 10, 2025',
     author: 'Daniel Hart',
     image:
-      'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80',
+      '/images/posts/travel-extra-2.jpg',
     categories: [{ label: 'Travel', tone: 'teal' }],
   },
 ]
@@ -478,6 +469,17 @@ export function getPostsByCategorySlug(slug: string): Post[] {
   return allPosts.filter((post) =>
     post.categories.some((c) => aliases.has(c.label.toLowerCase())),
   )
+}
+
+export function getPopularCategories() {
+  return categories
+    .map((category) => ({
+      name: category.label,
+      slug: category.slug,
+      count: getPostsByCategorySlug(category.slug).length,
+    }))
+    .filter((category) => category.count > 0)
+    .sort((a, b) => b.count - a.count)
 }
 
 export function getPostById(id: string) {

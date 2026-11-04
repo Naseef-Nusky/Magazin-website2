@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { popularCategories, trendingPosts , postPath} from '../data/articles'
+import { getPopularCategories, trendingPosts, postPath } from '../data/articles'
 import { SectionTitle } from './SectionTitle'
 import { CategoryBadge } from './CategoryBadge'
 
@@ -12,6 +12,7 @@ const followNetworks = [
 
 export function Sidebar() {
   const [featured, ...rest] = trendingPosts
+  const popularCategories = getPopularCategories()
 
   return (
     <aside className="space-y-8">

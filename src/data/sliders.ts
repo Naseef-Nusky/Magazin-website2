@@ -6,7 +6,7 @@ export const heroSlides = [
     category: 'Health',
     to: '/blog/hero-main',
     image:
-      'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80',
+      '/images/posts/hero-main.jpg',
     tone: 'red' as const,
   },
   {
@@ -16,7 +16,7 @@ export const heroSlides = [
     category: 'Technology',
     to: '/blog/hero-side-3',
     image:
-      'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
+      '/images/posts/hero-side-3.jpg',
     tone: 'blue' as const,
   },
   {
@@ -26,7 +26,7 @@ export const heroSlides = [
     category: 'Travel',
     to: '/blog/edit-1',
     image:
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+      '/images/posts/edit-1.jpg',
     tone: 'teal' as const,
   },
   {
@@ -36,7 +36,7 @@ export const heroSlides = [
     category: 'Fashion',
     to: '/blog/grid-3',
     image:
-      'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80',
+      '/images/posts/grid-3.jpg',
     tone: 'red' as const,
   },
   {
@@ -46,7 +46,7 @@ export const heroSlides = [
     category: 'Culture',
     to: '/blog/grid-4',
     image:
-      'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1200&q=80',
+      '/images/posts/grid-4.jpg',
     tone: 'purple' as const,
   },
 ]
@@ -56,42 +56,42 @@ export const categorySlides = [
     label: 'Technology',
     to: '/category/technology',
     image:
-      'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/hero-side-3.jpg',
   },
   {
     label: 'Fashion',
     to: '/category/fashion',
     image:
-      'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/fashion-extra-1.jpg',
   },
   {
     label: 'Travel',
     to: '/category/travel',
     image:
-      'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/edit-1.jpg',
   },
   {
     label: 'Health',
     to: '/category/health',
     image:
-      'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/hero-main.jpg',
   },
   {
     label: 'Food',
     to: '/category/food',
     image:
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/food-extra-1.jpg',
   },
   {
     label: 'Culture',
     to: '/category/culture',
     image:
-      'https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/grid-4.jpg',
   },
   {
     label: 'Lifestyle',
     to: '/category/lifestyle',
     image:
-      'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80',
+      '/images/posts/lifestyle-extra-1.jpg',
   },
 ]
