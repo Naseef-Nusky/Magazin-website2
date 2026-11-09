@@ -1,18 +1,27 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { CategoryBadge } from '../components/CategoryBadge'
-import { getPostById, getRelatedPosts, postPath } from '../data/articles'
+import { getRelatedPosts, postPath } from '../data/articles'
 import { getPostBody } from '../data/content'
 import { categories } from '../data/pages'
+import { usePost } from '../hooks/useSanityPosts'
 
 export function ArticlePage() {
   const { id = '' } = useParams()
-  const post = getPostById(id)
+  const { post, loading } = usePost(id)
 
-  if (!post) {
+  if (!loading && !post) {
     return <Navigate to="/blog" replace />
   }
 
-  const body = getPostBody(post)
+  if (!post) {
+    return (
+      <main className="mx-auto max-w-3xl px-4 py-20 text-center text-muted">
+        Loading story…
+      </main>
+    )
+  }
+
+  const body = post.bodyParagraphs?.length ? post.bodyParagraphs : getPostBody(post)
   const related = getRelatedPosts(post)
   const category = categories.find((c) =>
     post.categories.some((pc) =>

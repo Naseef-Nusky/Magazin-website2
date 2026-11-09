@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom'
 import { CategoryBadge } from '../components/CategoryBadge'
-import { allPosts, postPath } from '../data/articles'
-import type { Post } from '../data/articles'
-import { categories } from '../data/pages'
+import { postPath, type Post } from '../data/articles'
 import { getPostBody } from '../data/content'
+import { categories } from '../data/pages'
+import { useAllPosts } from '../hooks/useSanityPosts'
 
-function excerptFor(post: Post) {
+function excerptFor(post: Post & { bodyParagraphs?: string[] }) {
   if (post.excerpt) return post.excerpt
+  if (post.bodyParagraphs?.[0]) return post.bodyParagraphs[0]
   return getPostBody(post)[0]
 }
 
 export function BlogPage() {
-  const posts = allPosts.filter((post) => post.image)
+  const { posts, source } = useAllPosts()
   const [lead, second, third, ...archive] = posts
 
   return (
@@ -21,7 +22,7 @@ export function BlogPage() {
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div>
               <p className="text-[11px] font-bold tracking-[0.35em] text-brand uppercase">
-                Mazgazin2 archive · Issue 12
+                Mazgazin2 archive · {source === 'sanity' ? 'Sanity CMS' : 'Issue 12'}
               </p>
               <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-ink sm:text-6xl">
                 All Stories

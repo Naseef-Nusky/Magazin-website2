@@ -6,18 +6,18 @@ import { HealthLayout } from '../components/category/HealthLayout'
 import { LifestyleLayout } from '../components/category/LifestyleLayout'
 import { TechnologyLayout } from '../components/category/TechnologyLayout'
 import { TravelLayout } from '../components/category/TravelLayout'
-import { getPostsByCategorySlug } from '../data/articles'
 import { getCategoryBySlug } from '../data/pages'
+import { useCategoryPosts } from '../hooks/useSanityPosts'
 
 export function CategoryPage() {
   const { slug = '' } = useParams()
   const category = getCategoryBySlug(slug)
+  const { posts } = useCategoryPosts(slug)
 
   if (!category) {
     return <Navigate to="/" replace />
   }
 
-  const posts = getPostsByCategorySlug(slug)
   const props = { category, posts }
 
   switch (category.slug) {

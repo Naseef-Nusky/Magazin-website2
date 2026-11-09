@@ -1,0 +1,963 @@
+{
+  "categories": [
+    {
+      "title": "Technology",
+      "slug": "technology",
+      "eyebrow": "Innovation desk",
+      "tagline": "Gadgets, software, and the systems reshaping how we live and work.",
+      "tone": "blue"
+    },
+    {
+      "title": "Fashion",
+      "slug": "fashion",
+      "eyebrow": "Style edit",
+      "tagline": "Runway signals, quiet luxury, and wardrobe ideas with staying power.",
+      "tone": "red"
+    },
+    {
+      "title": "Travel",
+      "slug": "travel",
+      "eyebrow": "Destinations",
+      "tagline": "Routes, cities, and escapes that reward curiosity over checklists.",
+      "tone": "teal"
+    },
+    {
+      "title": "Health",
+      "slug": "health",
+      "eyebrow": "Wellness",
+      "tagline": "Practical guides for movement, recovery, and everyday balance.",
+      "tone": "red"
+    },
+    {
+      "title": "Food",
+      "slug": "food",
+      "eyebrow": "Kitchen & table",
+      "tagline": "Markets, bakeries, and the meals that define a neighborhood.",
+      "tone": "orange"
+    },
+    {
+      "title": "Culture",
+      "slug": "culture",
+      "eyebrow": "Arts & ideas",
+      "tagline": "Music, film, books, and the scenes keeping local stories alive.",
+      "tone": "purple"
+    },
+    {
+      "title": "Lifestyle",
+      "slug": "lifestyle",
+      "eyebrow": "Living well",
+      "tagline": "Rituals, homes, and habits that make ordinary days feel better.",
+      "tone": "green"
+    },
+    {
+      "title": "World",
+      "slug": "world",
+      "eyebrow": "World",
+      "tagline": "World stories from Mazgazin2.",
+      "tone": "red"
+    },
+    {
+      "title": "Sports",
+      "slug": "sports",
+      "eyebrow": "Sports",
+      "tagline": "Sports stories from Mazgazin2.",
+      "tone": "green"
+    },
+    {
+      "title": "Business",
+      "slug": "business",
+      "eyebrow": "Business",
+      "tagline": "Business stories from Mazgazin2.",
+      "tone": "purple"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Ava Morgan",
+      "role": "Contributor"
+    },
+    {
+      "name": "Chris Park",
+      "role": "Contributor"
+    },
+    {
+      "name": "Daniel Hart",
+      "role": "Contributor"
+    },
+    {
+      "name": "Elena Voss",
+      "role": "Contributor"
+    },
+    {
+      "name": "Jordan Lee",
+      "role": "Contributor"
+    },
+    {
+      "name": "Liam Chen",
+      "role": "Contributor"
+    },
+    {
+      "name": "Maya Okonkwo",
+      "role": "Contributor"
+    },
+    {
+      "name": "Nora Blake",
+      "role": "Contributor"
+    },
+    {
+      "name": "Sofia Reyes",
+      "role": "Contributor"
+    }
+  ],
+  "posts": [
+    {
+      "id": "hero-main",
+      "title": "Thriving, Not Just Surviving: A Blueprint for a Healthy Lifestyle",
+      "excerpt": null,
+      "date": "March 12, 2025",
+      "author": "Ava Morgan",
+      "imageFile": "hero-main.jpg",
+      "categories": [
+        {
+          "label": "Health",
+          "tone": "red"
+        },
+        {
+          "label": "Lifestyle",
+          "tone": "blue"
+        }
+      ],
+      "body": [
+        "Most wellness advice assumes you have endless mornings and a quiet kitchen. Real life looks different: late emails, short winters, and the guilt that follows a skipped workout.",
+        "Over four weeks, Mazgazin2 followed readers who rebuilt health around energy\u2014not punishment. They chose walks they enjoyed, cooked once for three nights, and protected sleep like a meeting that could not move.",
+        "The blueprint is simple on purpose. Pick one movement habit, one food habit, and one recovery habit. Track how you feel on Fridays, not how perfect you were on Mondays.",
+        "Thriving, in this telling, is less about transformation montages and more about systems that survive busy seasons. Small repeats beat dramatic resets every time."
+      ]
+    },
+    {
+      "id": "hero-side-1",
+      "title": "Cities in Motion: How Urban Culture Shapes Modern Identity",
+      "excerpt": null,
+      "date": "March 10, 2025",
+      "author": null,
+      "imageFile": "hero-side-1.jpg",
+      "categories": [
+        {
+          "label": "World",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Cities teach identity in motion: commute playlists, corner bakeries, and the unspoken rules of shared sidewalks. Urban culture is not only skyline photography\u2014it is how people claim belonging in crowded places.",
+        "Mazgazin2 visited three neighborhoods where street style, transit design, and night markets overlap. What looked chaotic from above felt intentional at street level.",
+        "The takeaway for readers is practical. Notice the rituals that make your city feel like yours\u2014then protect them. Culture thrives where people keep showing up."
+      ]
+    },
+    {
+      "id": "hero-side-2",
+      "title": "The Quiet Power of Morning Rituals",
+      "excerpt": null,
+      "date": "March 9, 2025",
+      "author": null,
+      "imageFile": "hero-side-2.jpg",
+      "categories": [
+        {
+          "label": "Lifestyle",
+          "tone": "green"
+        }
+      ],
+      "body": [
+        "Morning rituals rarely need incense and a perfect windowsill. The quiet power is sequence: water, light, and one task that is yours before the world starts asking.",
+        "We profiled readers who keep rituals under twelve minutes. Some stretch. Some journal three lines. Some simply sit with coffee and no phone.",
+        "Consistency mattered more than aesthetics. A ritual you can keep on travel days is more valuable than a ceremony that collapses under pressure."
+      ]
+    },
+    {
+      "id": "hero-side-3",
+      "title": "AI Tools That Actually Save Creators Time",
+      "excerpt": null,
+      "date": "March 8, 2025",
+      "author": null,
+      "imageFile": "hero-side-3.jpg",
+      "categories": [
+        {
+          "label": "Technology",
+          "tone": "blue"
+        }
+      ],
+      "body": [
+        "Creator tools promise hours back, then quietly invent new busywork. The AI tools worth keeping are the ones that remove friction from drafting, tagging, and research\u2014not the ones that demand a second workflow.",
+        "Mazgazin2 tested assistants for outlines, transcript cleanup, and image sorting. The winners were boring in the best way: reliable, private enough, and easy to shut off.",
+        "Use AI as a junior editor, not a replacement voice. Keep final judgment human, especially when the story involves real people."
+      ]
+    },
+    {
+      "id": "edit-1",
+      "title": "Coastal Escapes Worth Booking This Season",
+      "excerpt": "From quiet fishing villages to cliffside retreats, these destinations offer calm without the crowds.",
+      "date": "March 7, 2025",
+      "author": "Liam Chen",
+      "imageFile": "edit-1.jpg",
+      "categories": [
+        {
+          "label": "Travel",
+          "tone": "teal"
+        }
+      ],
+      "body": [
+        "Coastal escapes this season reward travelers who leave the checklist at home. Think ferry towns, cliff paths, and hotels that still feel like houses.",
+        "Our editors shortlisted destinations where the ocean is the main event and crowds stay thin if you arrive midweek. Book shoulder season when possible.",
+        "Pack light, walk more, eat where locals queue. The best coastal days are unscheduled by design."
+      ]
+    },
+    {
+      "id": "edit-2",
+      "title": "Designing Homes That Feel Alive",
+      "excerpt": "Interior trends this year lean into texture, natural light, and spaces meant for gathering.",
+      "date": "March 6, 2025",
+      "author": "Nora Blake",
+      "imageFile": "edit-2.jpg",
+      "categories": [
+        {
+          "label": "Lifestyle",
+          "tone": "orange"
+        }
+      ],
+      "body": [
+        "Homes that feel alive share a pattern: soft light, touchable textures, and rooms that invite lingering. Design is less about matching sets and more about lived-in clarity.",
+        "We spoke with interior stylists who prioritize gathering spaces over showpiece furniture. A slightly imperfect table beats a pristine room nobody uses.",
+        "Start with one wall of daylight and one honest material\u2014wood, linen, clay. Atmosphere compounds from there."
+      ]
+    },
+    {
+      "id": "edit-t1",
+      "title": "Why Local Journalism Still Matters in a Digital Age",
+      "excerpt": null,
+      "date": "March 5, 2025",
+      "author": "Maya Okonkwo",
+      "imageFile": "edit-t1.jpg",
+      "categories": [
+        {
+          "label": "Culture",
+          "tone": "purple"
+        }
+      ],
+      "body": [
+        "Local journalism still does what platforms cannot: sit through council meetings, name the street correctly, and follow a story after the viral moment fades.",
+        "Mazgazin2 argues for supporting reporters who know their communities. Subscriptions, memberships, and simply reading past the headline all matter.",
+        "A healthy information diet includes voices close to home. Distant feeds rarely explain your neighborhood."
+      ]
+    },
+    {
+      "id": "edit-t2",
+      "title": "Five Podcasts Changing How We Talk About Work",
+      "excerpt": null,
+      "date": "March 4, 2025",
+      "author": "Liam Chen",
+      "imageFile": "edit-t2.jpg",
+      "categories": [
+        {
+          "label": "Culture",
+          "tone": "purple"
+        }
+      ],
+      "body": [
+        "Work podcasts used to chase hustle. The best new shows talk about boundaries, craft, and the politics of meetings instead.",
+        "We highlight five series that treat listeners like adults\u2014curious, tired, and allergic to empty motivation.",
+        "Listen while commuting or cooking. The point is perspective, not another productivity stack."
+      ]
+    },
+    {
+      "id": "edit-t3",
+      "title": "The Rise of Slow Fashion in Everyday Wardrobes",
+      "excerpt": null,
+      "date": "March 3, 2025",
+      "author": "Sofia Reyes",
+      "imageFile": "edit-t3.jpg",
+      "categories": [
+        {
+          "label": "Fashion",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Slow fashion is leaving the manifesto stage and entering closets. People want fewer pieces that survive seasons, not endless micro-trends.",
+        "Repair, resale, and thoughtful fabrics are becoming normal language at the till. Style still matters\u2014waste just matters more.",
+        "Build a wardrobe like a library: add deliberately, keep what earns its place, and loan what you can."
+      ]
+    },
+    {
+      "id": "edit-t4",
+      "title": "Street Food Markets Redefining City Nightlife",
+      "excerpt": null,
+      "date": "March 2, 2025",
+      "author": "Jordan Lee",
+      "imageFile": "edit-t4.jpg",
+      "categories": [
+        {
+          "label": "Food",
+          "tone": "orange"
+        }
+      ],
+      "body": [
+        "Street food markets are rewriting nightlife without velvet ropes. Shared tables, late kitchens, and playlists that change by the hour.",
+        "Cities featured here treat markets as social infrastructure\u2014places to meet after work without needing a reservation strategy.",
+        "Go hungry, share plates, and follow the longest queue that still looks joyful."
+      ]
+    },
+    {
+      "id": "recent-feature",
+      "title": "Finding Balance: Work, Wellness, and the Spaces Between",
+      "excerpt": "A practical look at how professionals are redesigning their weeks around energy\u2014not just productivity\u2014and what that means for long-term health.",
+      "date": "March 11, 2025",
+      "author": "Sofia Reyes",
+      "imageFile": "recent-feature.jpg",
+      "categories": [
+        {
+          "label": "Health",
+          "tone": "red"
+        },
+        {
+          "label": "Lifestyle",
+          "tone": "blue"
+        }
+      ],
+      "body": [
+        "Balance is rarely a perfect split of hours. For the professionals we interviewed, it looked more like a rhythm: intense focus blocks, deliberate downtime, and spaces that cue each mode.",
+        "Offices, kitchens, and even phone lock screens became tools. When the environment matched the intention, willpower mattered less\u2014and habits lasted longer.",
+        "The takeaway is not another productivity system. It is permission to redesign the week around energy peaks, then protect the quieter hours that make those peaks possible."
+      ]
+    },
+    {
+      "id": "recent-1",
+      "title": "Weekend Markets That Feel Like Mini Vacations",
+      "excerpt": null,
+      "date": "March 10, 2025",
+      "author": "Jordan Lee",
+      "imageFile": "recent-1.jpg",
+      "categories": [
+        {
+          "label": "Food",
+          "tone": "orange"
+        }
+      ],
+      "body": [
+        "Weekend markets can feel like travel without a suitcase: unfamiliar produce, live music, and strangers who become regulars.",
+        "Mazgazin2 mapped markets that reward early arrival and slow wandering. Bring a tote, leave the rush.",
+        "The souvenir is usually breakfast\u2014and a better sense of your city\u2019s appetite."
+      ]
+    },
+    {
+      "id": "recent-2",
+      "title": "How Indie Bookshops Are Winning Readers Back",
+      "excerpt": null,
+      "date": "March 9, 2025",
+      "author": "Maya Okonkwo",
+      "imageFile": "recent-2.jpg",
+      "categories": [
+        {
+          "label": "Culture",
+          "tone": "purple"
+        }
+      ],
+      "body": [
+        "Indie bookshops are winning by being specific. Staff picks, reading nooks, and events that feel like living rooms with better lighting.",
+        "Readers return for trust. Algorithms recommend; booksellers vouch.",
+        "Buy one unexpected title next visit. That is how scenes stay funded."
+      ]
+    },
+    {
+      "id": "recent-3",
+      "title": "Smart Homes, Simpler Living: Gadgets Worth Keeping",
+      "excerpt": null,
+      "date": "March 8, 2025",
+      "author": "Chris Park",
+      "imageFile": "recent-3.jpg",
+      "categories": [
+        {
+          "label": "Technology",
+          "tone": "blue"
+        }
+      ],
+      "body": [
+        "Smart home gadgets earn a place only when they simplify. Lights that welcome you home, sensors that catch leaks, speakers that do not demand an app marathon.",
+        "We kept devices that disappear into routine and discarded ones that created maintenance hobbies.",
+        "Start with one room. Complexity should arrive last, if at all."
+      ]
+    },
+    {
+      "id": "recent-4",
+      "title": "Trail Running Guides for First-Time Adventurers",
+      "excerpt": null,
+      "date": "March 7, 2025",
+      "author": "Elena Voss",
+      "imageFile": "recent-4.jpg",
+      "categories": [
+        {
+          "label": "Sports",
+          "tone": "green"
+        }
+      ],
+      "body": [
+        "Trail running for beginners is less about pace and more about shoes, maps, and knowing when to walk.",
+        "Our guide covers short loops, hydration basics, and how to enjoy hills without treating them like enemies.",
+        "The goal is finishing with enough joy to return next weekend."
+      ]
+    },
+    {
+      "id": "recent-wide",
+      "title": "Tales and Tips from Around the World",
+      "excerpt": "Correspondents share the unexpected details that make travel memorable\u2014from late-night trains to neighborhood bakeries.",
+      "date": "March 6, 2025",
+      "author": "Daniel Hart",
+      "imageFile": "recent-wide.jpg",
+      "categories": [
+        {
+          "label": "Travel",
+          "tone": "teal"
+        },
+        {
+          "label": "World",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Travel tips that last are rarely about secret beaches. They are about trains that arrive on time, bakeries that open early, and the courage to get slightly lost.",
+        "Correspondents share small scenes from five cities\u2014moments that taught more than any itinerary bullet.",
+        "Collect stories, not just stamps. The best souvenirs are sentences you want to retell."
+      ]
+    },
+    {
+      "id": "grid-1",
+      "title": "Camera Kits for Storytellers on a Budget",
+      "excerpt": null,
+      "date": "March 5, 2025",
+      "author": "Ava Morgan",
+      "imageFile": "grid-1.jpg",
+      "categories": [
+        {
+          "label": "Technology",
+          "tone": "blue"
+        }
+      ],
+      "body": [
+        "Storytelling on a budget starts with light and a lens you understand, not the newest body.",
+        "Mazgazin2 recommends kits under a realistic threshold: one versatile prime, a reliable bag, and storage that will not fail mid-trip.",
+        "Practice one setting until it becomes instinct. Gear is secondary to attention."
+      ]
+    },
+    {
+      "id": "grid-2",
+      "title": "Garden-to-Table Recipes for Busy Weeknights",
+      "excerpt": null,
+      "date": "March 4, 2025",
+      "author": "Nora Blake",
+      "imageFile": "grid-2.jpg",
+      "categories": [
+        {
+          "label": "Food",
+          "tone": "orange"
+        }
+      ],
+      "body": [
+        "Garden-to-table cooking for weeknights means herbs you actually use and recipes that forgive a long day.",
+        "We share plates built around one fresh element and pantry backups\u2014so dinner still happens when the market run does not.",
+        "Flavor first, perfection later. Hungry people are patient only until the pan is hot."
+      ]
+    },
+    {
+      "id": "grid-3",
+      "title": "Fashion Capsules That Travel Light",
+      "excerpt": null,
+      "date": "March 3, 2025",
+      "author": "Sofia Reyes",
+      "imageFile": "grid-3.jpg",
+      "categories": [
+        {
+          "label": "Fashion",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Travel fashion capsules succeed when every piece earns multiple outfits and survives a crumpled suitcase.",
+        "Neutral bases, one statement layer, and shoes you can walk in for hours. That is the whole thesis.",
+        "If it only works on a mood board, leave it at home."
+      ]
+    },
+    {
+      "id": "grid-4",
+      "title": "Music Festivals Shaping Summer Culture",
+      "excerpt": null,
+      "date": "March 2, 2025",
+      "author": "Liam Chen",
+      "imageFile": "grid-4.jpg",
+      "categories": [
+        {
+          "label": "Culture",
+          "tone": "purple"
+        }
+      ],
+      "body": [
+        "Summer festivals shape culture by creating temporary cities of sound, fashion, and friendship.",
+        "Beyond headliners, the story is in side stages, mutual aid tents, and the outfits that become next season\u2019s references.",
+        "Go for the music. Stay for the people who make the weekend feel like a chapter."
+      ]
+    },
+    {
+      "id": "trend-1",
+      "title": "The New Rules of Remote Collaboration",
+      "excerpt": null,
+      "date": "March 11, 2025",
+      "author": null,
+      "imageFile": "trend-1.jpg",
+      "categories": [
+        {
+          "label": "Business",
+          "tone": "purple"
+        }
+      ],
+      "body": [
+        "Remote collaboration works when teams agree on response times, camera norms, and what \u201cdone\u201d means.",
+        "New rules favor async writing over endless calls\u2014and clearer ownership over vague group chats.",
+        "Culture is the real software. Tools only amplify what you already reward."
+      ]
+    },
+    {
+      "id": "trend-2",
+      "title": "Electric Mobility Is Changing City Streets",
+      "excerpt": null,
+      "date": "March 10, 2025",
+      "author": null,
+      "imageFile": "trend-2.jpg",
+      "categories": [
+        {
+          "label": "Technology",
+          "tone": "blue"
+        }
+      ],
+      "body": [
+        "Electric mobility is changing street noise, parking logic, and who feels safe after dark.",
+        "Cities experimenting with e-bikes and quieter buses are rewriting the soundtrack of commuting.",
+        "Watch the curb: that is where policy becomes personal."
+      ]
+    },
+    {
+      "id": "trend-3",
+      "title": "Mindful Eating Without the Rules",
+      "excerpt": null,
+      "date": "March 9, 2025",
+      "author": null,
+      "imageFile": "trend-3.jpg",
+      "categories": [
+        {
+          "label": "Food",
+          "tone": "orange"
+        }
+      ],
+      "body": [
+        "Mindful eating without rigid rules means noticing hunger, pleasure, and pace\u2014not policing every bite.",
+        "Readers who dropped extreme frameworks reported more calm and fewer rebound spirals.",
+        "Permission is a nutrition strategy too."
+      ]
+    },
+    {
+      "id": "trend-4",
+      "title": "Architecture That Invites the Outside In",
+      "excerpt": null,
+      "date": "March 8, 2025",
+      "author": null,
+      "imageFile": "trend-4.jpg",
+      "categories": [
+        {
+          "label": "Lifestyle",
+          "tone": "green"
+        }
+      ],
+      "body": [
+        "Architecture that invites the outside in uses thresholds carefully: courtyards, deep windows, and materials that age with weather.",
+        "Homes and cafes featured here blur shelter and landscape without pretending nature is a wallpaper.",
+        "Open a door. Let the season enter on purpose."
+      ]
+    },
+    {
+      "id": "trend-5",
+      "title": "Why Short Films Are Having a Moment",
+      "excerpt": null,
+      "date": "March 7, 2025",
+      "author": "Maya Okonkwo",
+      "imageFile": "trend-5.jpg",
+      "categories": [
+        {
+          "label": "Culture",
+          "tone": "purple"
+        }
+      ],
+      "body": [
+        "Short films are having a moment because attention is scarce and craft is portable.",
+        "Festivals, phones, and streaming side channels give directors room to experiment without a two-hour commitment from audiences.",
+        "Ten sharp minutes can outlast a forgettable feature."
+      ]
+    },
+    {
+      "id": "most-1",
+      "title": "A Practical Guide to Building Better Habits",
+      "excerpt": null,
+      "date": "March 1, 2025",
+      "author": null,
+      "imageFile": "most-1.jpg",
+      "categories": [
+        {
+          "label": "Lifestyle",
+          "tone": "green"
+        }
+      ],
+      "body": [
+        "Better habits stick when they are small enough to survive bad days and visible enough to celebrate.",
+        "This guide favors cues, environment design, and weekly reviews over motivational speeches.",
+        "Build identity with evidence: I am someone who showed up today."
+      ]
+    },
+    {
+      "id": "most-2",
+      "title": "Hidden Museums Every Traveler Should Visit",
+      "excerpt": null,
+      "date": "February 28, 2025",
+      "author": null,
+      "imageFile": "most-2.jpg",
+      "categories": [
+        {
+          "label": "Travel",
+          "tone": "teal"
+        }
+      ],
+      "body": [
+        "Hidden museums reward travelers who leave the main square. Tiny collections, obsessive curators, and tickets that still feel intimate.",
+        "We list stops where the gift shop is optional and the stories are not.",
+        "Arrive curious. Leave with one object you cannot stop thinking about."
+      ]
+    },
+    {
+      "id": "most-3",
+      "title": "Coffee Culture Beyond the Latte",
+      "excerpt": null,
+      "date": "February 27, 2025",
+      "author": null,
+      "imageFile": "most-3.jpg",
+      "categories": [
+        {
+          "label": "Food",
+          "tone": "orange"
+        }
+      ],
+      "body": [
+        "Coffee culture beyond the latte is about roasting stories, water chemistry, and cafes that feel like third places.",
+        "Order something unfamiliar. Talk to the person pulling shots. Learn one farm name.",
+        "The cup is the headline; the community is the article."
+      ]
+    },
+    {
+      "id": "most-4",
+      "title": "What Founders Get Wrong About Brand Voice",
+      "excerpt": null,
+      "date": "February 26, 2025",
+      "author": null,
+      "imageFile": "most-4.jpg",
+      "categories": [
+        {
+          "label": "Culture",
+          "tone": "purple"
+        }
+      ],
+      "body": [
+        "Founders often confuse brand voice with catchphrases. Voice is how you decide, apologize, and explain tradeoffs.",
+        "Mazgazin2 outlines tests: would your team recognize a paragraph without the logo? Would a customer trust it on a hard day?",
+        "Clarity beats cleverness when stakes are real."
+      ]
+    },
+    {
+      "id": "tech-extra-1",
+      "title": "Wearables That Track More Than Steps",
+      "excerpt": "From sleep quality to recovery scores, the newest devices are getting smarter about rest.",
+      "date": "March 5, 2025",
+      "author": "Chris Park",
+      "imageFile": "tech-extra-1.jpg",
+      "categories": [
+        {
+          "label": "Technology",
+          "tone": "blue"
+        }
+      ],
+      "body": [
+        "Wearables now track recovery, stress proxies, and sleep stages\u2014not only steps that guilt you at midnight.",
+        "Useful devices turn data into gentle nudges. Noise machines disguised as insights deserve a drawer.",
+        "Read trends across weeks, not hours. Bodies are not dashboards."
+      ]
+    },
+    {
+      "id": "fashion-extra-1",
+      "title": "Quiet Luxury Looks That Still Feel Personal",
+      "excerpt": "Neutral palettes and strong tailoring are back\u2014without looking like a uniform.",
+      "date": "March 4, 2025",
+      "author": "Sofia Reyes",
+      "imageFile": "fashion-extra-1.jpg",
+      "categories": [
+        {
+          "label": "Fashion",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Quiet luxury looks personal when cut and fabric do the talking\u2014and when the wearer still feels like themselves.",
+        "Skip logos; invest in shoulders, drape, and shoes that hold a room without shouting.",
+        "Restraint is a style choice, not a personality erase."
+      ]
+    },
+    {
+      "id": "fashion-extra-2",
+      "title": "How Vintage Markets Are Influencing New Collections",
+      "excerpt": null,
+      "date": "March 1, 2025",
+      "author": "Nora Blake",
+      "imageFile": "fashion-extra-2.jpg",
+      "categories": [
+        {
+          "label": "Fashion",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Vintage markets influence new collections by proving which silhouettes survive decades of closets.",
+        "Designers mine rails for proportion and patina; shoppers mine them for stories money cannot reprint.",
+        "Touch the fabric. History has a texture."
+      ]
+    },
+    {
+      "id": "travel-extra-1",
+      "title": "Train Journeys Worth Taking Slowly",
+      "excerpt": "Scenic routes where the ride is the destination.",
+      "date": "March 3, 2025",
+      "author": "Daniel Hart",
+      "imageFile": "travel-extra-1.jpg",
+      "categories": [
+        {
+          "label": "Travel",
+          "tone": "teal"
+        }
+      ],
+      "body": [
+        "Slow trains turn distance into a feature: windows, conversations, and meals that are not packaged panic.",
+        "Choose routes famous for scenery and schedules kind to daydreaming.",
+        "Arrive later if you must. Arrive changed if you can."
+      ]
+    },
+    {
+      "id": "health-extra-1",
+      "title": "Strength Training Without the Intimidation",
+      "excerpt": "Simple routines that build consistency for beginners.",
+      "date": "March 2, 2025",
+      "author": "Elena Voss",
+      "imageFile": "health-extra-1.jpg",
+      "categories": [
+        {
+          "label": "Health",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Strength training without intimidation starts with simple lifts, clear coaching, and rooms that do not perform toughness.",
+        "Beginners thrive on two full-body sessions and form that feels boringly correct.",
+        "Strong is a practice, not an aesthetic deadline."
+      ]
+    },
+    {
+      "id": "food-extra-1",
+      "title": "Neighborhood Bakeries Redefining Comfort Food",
+      "excerpt": null,
+      "date": "February 25, 2025",
+      "author": "Jordan Lee",
+      "imageFile": "food-extra-1.jpg",
+      "categories": [
+        {
+          "label": "Food",
+          "tone": "orange"
+        }
+      ],
+      "body": [
+        "Neighborhood bakeries redefine comfort by smelling like butter at 7 a.m. and knowing regulars by order.",
+        "Support the ones that still laminate dough by hand and open when the street is half awake.",
+        "Buy the loaf you will finish. Romance follows crumbs."
+      ]
+    },
+    {
+      "id": "culture-extra-1",
+      "title": "Community Theaters Keeping Local Stories Alive",
+      "excerpt": null,
+      "date": "February 24, 2025",
+      "author": "Maya Okonkwo",
+      "imageFile": "culture-extra-1.jpg",
+      "categories": [
+        {
+          "label": "Culture",
+          "tone": "purple"
+        }
+      ],
+      "body": [
+        "Community theaters keep local stories alive when big stages chase touring brands.",
+        "Volunteer ushers, borrowed sets, and playwrights who write about the next street over\u2014that is cultural infrastructure.",
+        "Clap loudly. Scenes survive on witnesses."
+      ]
+    },
+    {
+      "id": "lifestyle-extra-1",
+      "title": "Small Apartments, Big Ideas for Daily Calm",
+      "excerpt": "Storage, light, and rituals that make compact living feel generous.",
+      "date": "February 23, 2025",
+      "author": "Ava Morgan",
+      "imageFile": "lifestyle-extra-1.jpg",
+      "categories": [
+        {
+          "label": "Lifestyle",
+          "tone": "green"
+        }
+      ],
+      "body": [
+        "Small apartments feel calm when storage is honest and surfaces stay clear enough to think.",
+        "One good lamp, one plant that forgives you, and a ritual for resetting the table each night.",
+        "Space is a feeling you design, not only a floor plan you rent."
+      ]
+    },
+    {
+      "id": "lifestyle-extra-2",
+      "title": "Digital Sundays: Unplugging Without FOMO",
+      "excerpt": null,
+      "date": "February 20, 2025",
+      "author": "Liam Chen",
+      "imageFile": "lifestyle-extra-2.jpg",
+      "categories": [
+        {
+          "label": "Lifestyle",
+          "tone": "green"
+        }
+      ],
+      "body": [
+        "Digital Sundays work when they are scheduled like appointments: phones in a drawer, walks outside, and messages that can wait until Monday.",
+        "Unplugging is not purity. It is maintenance for attention.",
+        "You will miss nothing that matters. You may notice everything that does."
+      ]
+    },
+    {
+      "id": "fashion-extra-3",
+      "title": "Tailoring Rules for Soft Power Dressing",
+      "excerpt": "How precise cuts and muted tones make everyday outfits feel intentional.",
+      "date": "February 22, 2025",
+      "author": "Nora Blake",
+      "imageFile": "fashion-extra-3.jpg",
+      "categories": [
+        {
+          "label": "Fashion",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Soft power dressing uses precise tailoring to signal care without armor. Think ease in the shoulder and confidence in the hem.",
+        "Alterations are part of the outfit budget. Fit is the loudest quiet flex.",
+        "Wear clothes that help you enter rooms as yourself."
+      ]
+    },
+    {
+      "id": "fashion-extra-4",
+      "title": "Accessories That Carry a Whole Outfit",
+      "excerpt": null,
+      "date": "February 18, 2025",
+      "author": "Sofia Reyes",
+      "imageFile": "fashion-extra-4.jpg",
+      "categories": [
+        {
+          "label": "Fashion",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Accessories can carry an outfit when the base is simple: a bag with structure, jewelry with weight, a scarf with opinion.",
+        "Choose one hero and let everything else support it.",
+        "Too many statements become noise. One clear note becomes style."
+      ]
+    },
+    {
+      "id": "fashion-extra-5",
+      "title": "Monochrome Layers for City Evenings",
+      "excerpt": null,
+      "date": "February 15, 2025",
+      "author": "Ava Morgan",
+      "imageFile": "fashion-extra-5.jpg",
+      "categories": [
+        {
+          "label": "Fashion",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Monochrome layers for city evenings create drama through texture\u2014matte against shine, soft against sharp.",
+        "Black is classic; deep green and ink blue tell newer stories after dark.",
+        "Walk under streetlights and check the silhouette. Night is the real fitting room."
+      ]
+    },
+    {
+      "id": "health-extra-2",
+      "title": "Sleep Hygiene Habits That Actually Stick",
+      "excerpt": null,
+      "date": "February 14, 2025",
+      "author": "Elena Voss",
+      "imageFile": "health-extra-2.jpg",
+      "categories": [
+        {
+          "label": "Health",
+          "tone": "red"
+        }
+      ],
+      "body": [
+        "Sleep hygiene that sticks is environmental: cooler rooms, dimmer hours, and a cutoff for stimulating screens.",
+        "Supplements are optional. Consistency is not.",
+        "Protect the night like it is the foundation of tomorrow\u2019s work\u2014because it is."
+      ]
+    },
+    {
+      "id": "tech-extra-2",
+      "title": "Open-Source Apps Worth Switching To",
+      "excerpt": null,
+      "date": "February 12, 2025",
+      "author": "Chris Park",
+      "imageFile": "tech-extra-2.jpg",
+      "categories": [
+        {
+          "label": "Technology",
+          "tone": "blue"
+        }
+      ],
+      "body": [
+        "Open-source apps worth switching to respect your files, your offline hours, and your right to leave.",
+        "We highlight tools for notes, photos, and writing that do not trap your archive in a single vendor mood.",
+        "Own the workflow. Rent the servers only when you must."
+      ]
+    },
+    {
+      "id": "travel-extra-2",
+      "title": "City Breaks Built Around One Great Neighborhood",
+      "excerpt": null,
+      "date": "February 10, 2025",
+      "author": "Daniel Hart",
+      "imageFile": "travel-extra-2.jpg",
+      "categories": [
+        {
+          "label": "Travel",
+          "tone": "teal"
+        }
+      ],
+      "body": [
+        "City breaks built around one neighborhood feel richer than checklist tourism. Pick a base, walk spokes, eat repeatedly at the place that remembers you.",
+        "You will miss monuments. You will gain a temporary local life.",
+        "That trade is the point of a short escape."
+      ]
+    }
+  ]
+}
