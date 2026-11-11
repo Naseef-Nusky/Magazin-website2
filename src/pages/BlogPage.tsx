@@ -135,7 +135,7 @@ export function BlogPage() {
         </section>
       )}
 
-      <section className="border-t border-line bg-[#f7f5f2]">
+      <section className="border-t border-line bg-[#f7f5f2] pb-2">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
           <div className="mb-8 flex items-end justify-between gap-4 border-b border-line pb-4">
             <div>

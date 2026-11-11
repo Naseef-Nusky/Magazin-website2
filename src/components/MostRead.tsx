@@ -4,7 +4,7 @@ import { SectionTitle } from './SectionTitle'
 
 export function MostRead() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+    <section className="mx-auto max-w-7xl px-4 pt-8 pb-10 sm:px-6">
       <SectionTitle>Most Read Post</SectionTitle>
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {mostRead.map((post) => (

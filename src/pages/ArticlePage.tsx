@@ -103,7 +103,7 @@ export function ArticlePage() {
       </article>
 
       {related.length > 0 && (
-        <section className="border-t border-line bg-[#f7f5f2]">
+        <section className="border-t border-line bg-[#f7f5f2] pb-2">
           <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
             <h2 className="font-display text-2xl font-semibold text-ink">Related stories</h2>
             <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

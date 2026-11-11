@@ -3,13 +3,6 @@ import { getPopularCategories, trendingPosts, postPath } from '../data/articles'
 import { SectionTitle } from './SectionTitle'
 import { CategoryBadge } from './CategoryBadge'
 
-const followNetworks = [
-  { name: 'Facebook', count: '12.4k', color: 'bg-[#1877f2]' },
-  { name: 'X / Twitter', count: '8.1k', color: 'bg-[#111]' },
-  { name: 'Instagram', count: '19.6k', color: 'bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af]' },
-  { name: 'YouTube', count: '6.2k', color: 'bg-[#ff0000]' },
-]
-
 export function Sidebar() {
   const [featured, ...rest] = trendingPosts
   const popularCategories = getPopularCategories()
@@ -54,22 +47,6 @@ export function Sidebar() {
             </li>
           ))}
         </ul>
-      </div>
-
-      <div>
-        <SectionTitle>Follow Us</SectionTitle>
-        <div className="grid grid-cols-2 gap-2">
-          {followNetworks.map((net) => (
-            <a
-              key={net.name}
-              href="#"
-              className={`${net.color} flex flex-col items-start justify-center px-3 py-3 text-white transition hover:opacity-90`}
-            >
-              <span className="text-xs font-bold">{net.name}</span>
-              <span className="text-[10px] opacity-80">{net.count} followers</span>
-            </a>
-          ))}
-        </div>
       </div>
 
       <div>

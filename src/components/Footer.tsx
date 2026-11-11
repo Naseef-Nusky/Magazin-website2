@@ -34,8 +34,8 @@ function FooterPostList({
 
 export function Footer() {
   return (
-    <footer className="mt-4 bg-footer text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2">
+    <footer className="bg-footer text-white">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 md:grid-cols-2">
         <FooterPostList title="Trending Post" posts={footerTrending} />
         <FooterPostList title="Popular Post" posts={footerPopular} />
       </div>

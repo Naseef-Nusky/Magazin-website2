@@ -25,9 +25,12 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <Link to="/" className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-          <span className="text-brand">Maz</span>
-          <span className="text-ink">gazin2</span>
+        <Link to="/" className="inline-flex shrink-0 items-center">
+          <img
+            src="/images/posts/bg%20removed%20logo.png"
+            alt="Mazgazin2"
+            className="h-10 w-auto object-contain sm:h-12"
+          />
         </Link>
 
         {/* Desktop nav */}
