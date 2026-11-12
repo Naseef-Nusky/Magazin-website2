@@ -1,4 +1,4 @@
-import { healthPosts, lifestylePosts, newsPosts, technologyPosts, travelPosts } from './articles'
+import { healthPosts, lifestylePosts, newsPosts, travelPosts } from './articles'
 
 export const heroSlides = [
   {

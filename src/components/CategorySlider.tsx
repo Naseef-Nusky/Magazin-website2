@@ -68,7 +68,7 @@ export function CategorySlider() {
         <div ref={trackRef} className="flex w-max gap-4 will-change-transform">
           {slides.map((slide, i) => (
             <Link
-              key={`${slide.label}-${i}`}
+              key={`${slide.id}-${i}`}
               to={slide.to}
               className="group relative block h-44 w-64 shrink-0 overflow-hidden sm:h-52 sm:w-72"
             >
@@ -83,7 +83,7 @@ export function CategorySlider() {
                   Category
                 </p>
                 <h3 className="font-display text-xl font-semibold text-white transition group-hover:text-brand">
-                  {slide.label}
+                  {slide.category}
                 </h3>
                 <p className="mt-1 text-xs text-white/75">View stories →</p>
               </div>
