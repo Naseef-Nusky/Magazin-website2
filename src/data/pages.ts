@@ -1,17 +1,17 @@
 export const categories = [
   {
+    label: 'News',
+    slug: 'news',
+    aliases: ['News'],
+    eyebrow: 'UK desk',
+    tagline: 'Breaking stories, public interest reporting, and the week’s essential updates.',
+  },
+  {
     label: 'Technology',
     slug: 'technology',
     aliases: ['Technology', 'Tech'],
     eyebrow: 'Innovation desk',
-    tagline: 'Gadgets, software, and the systems reshaping how we live and work.',
-  },
-  {
-    label: 'Fashion',
-    slug: 'fashion',
-    aliases: ['Fashion'],
-    eyebrow: 'Style edit',
-    tagline: 'Runway signals, quiet luxury, and wardrobe ideas with staying power.',
+    tagline: 'AI, infrastructure, and the systems reshaping how we live and work.',
   },
   {
     label: 'Travel',

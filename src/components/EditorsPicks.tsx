@@ -27,9 +27,7 @@ export function EditorsPicks() {
                 {post.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted">{post.excerpt}</p>
-              <p className="mt-2 text-[11px] text-muted">
-                {post.author} · {post.date}
-              </p>
+              <p className="mt-2 text-[11px] text-muted">{post.date}</p>
             </Link>
           </article>
         ))}

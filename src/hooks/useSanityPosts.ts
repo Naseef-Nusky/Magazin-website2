@@ -25,8 +25,13 @@ export function useAllPosts() {
     let active = true
     fetchSanityPosts().then((remote) => {
       if (!active) return
+      const localCatalog = allPosts.filter((post) => post.image)
       if (remote.length) {
-        setPosts(remote)
+        const byId = new Map(localCatalog.map((post) => [post.id, post]))
+        for (const remotePost of remote) {
+          if (byId.has(remotePost.id)) byId.set(remotePost.id, remotePost)
+        }
+        setPosts([...byId.values()])
         setSource('sanity')
       }
       setLoading(false)
@@ -77,7 +82,16 @@ export function useCategoryPosts(slug: string) {
 
     fetchSanityPostsByCategory(slug).then((remote) => {
       if (!active) return
-      if (remote.length) setPosts(remote)
+      const local = getPostsByCategorySlug(slug)
+      if (remote.length) {
+        const byId = new Map(local.map((post) => [post.id, post]))
+        for (const remotePost of remote) {
+          if (byId.has(remotePost.id)) byId.set(remotePost.id, remotePost)
+        }
+        setPosts([...byId.values()])
+      } else {
+        setPosts(local)
+      }
       setLoading(false)
     })
 

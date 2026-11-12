@@ -31,9 +31,7 @@ export function RecentPosts() {
           {recentFeature.title}
         </h3>
         <p className="mt-2 text-sm leading-relaxed text-muted">{recentFeature.excerpt}</p>
-        <p className="mt-2 text-[11px] text-muted">
-          {recentFeature.author} · {recentFeature.date}
-        </p>
+        <p className="mt-2 text-[11px] text-muted">{recentFeature.date}</p>
       </Link>
 
       <ul className="mb-8 grid gap-4 sm:grid-cols-2">
@@ -96,9 +94,7 @@ export function RecentPosts() {
               <h3 className="font-display text-[15px] font-semibold leading-snug transition group-hover:text-brand">
                 {post.title}
               </h3>
-              <p className="mt-1.5 text-[11px] text-muted">
-                {post.author} · {post.date}
-              </p>
+              <p className="mt-1.5 text-[11px] text-muted">{post.date}</p>
             </Link>
           </article>
         ))}

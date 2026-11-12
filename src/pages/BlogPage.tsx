@@ -22,14 +22,14 @@ export function BlogPage() {
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div>
               <p className="text-[11px] font-bold tracking-[0.35em] text-brand uppercase">
-                Mazgazin2 archive · {source === 'sanity' ? 'Sanity CMS' : 'Issue 12'}
+                Blog archive · {source === 'sanity' ? 'Latest' : 'All posts'}
               </p>
               <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-ink sm:text-6xl">
                 All Stories
               </h1>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-muted">
-                Browse every Mazgazin2 feature across technology, fashion, travel, health, food,
-                culture, and lifestyle — curated like a print magazine, built for the web.
+                Browse every feature across technology, travel, health, food, culture, and lifestyle
+                — curated like a print magazine, built for the web.
               </p>
             </div>
             <div className="border border-line bg-white px-5 py-4 text-center">
@@ -86,10 +86,7 @@ export function BlogPage() {
                 {lead.title}
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-muted">{excerptFor(lead)}</p>
-              <p className="mt-5 text-[11px] tracking-wide text-muted uppercase">
-                {lead.author ? `${lead.author} · ` : ''}
-                {lead.date}
-              </p>
+              <p className="mt-5 text-[11px] tracking-wide text-muted uppercase">{lead.date}</p>
               <span className="mt-6 text-xs font-bold tracking-[0.2em] text-brand uppercase">
                 Read full story →
               </span>
@@ -125,10 +122,7 @@ export function BlogPage() {
                 <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted">
                   {excerptFor(post!)}
                 </p>
-                <p className="mt-3 text-[11px] text-muted uppercase">
-                  {post!.author ? `${post!.author} · ` : ''}
-                  {post!.date}
-                </p>
+                <p className="mt-3 text-[11px] text-muted uppercase">{post!.date}</p>
               </div>
             </Link>
           ))}
@@ -172,10 +166,7 @@ export function BlogPage() {
                     {excerptFor(post)}
                   </p>
                   <div className="mt-4 flex items-center justify-between gap-3 border-t border-line pt-3">
-                    <p className="text-[11px] text-muted uppercase">
-                      {post.author ? `${post.author} · ` : ''}
-                      {post.date}
-                    </p>
+                    <p className="text-[11px] text-muted uppercase">{post.date}</p>
                     <Link
                       to={postPath(post.id)}
                       className="text-[11px] font-bold tracking-wide text-brand uppercase"

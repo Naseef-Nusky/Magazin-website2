@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
-import { footerPopular, footerTrending , postPath} from '../data/articles'
+import { footerPopular, footerTrending, postPath } from '../data/articles'
+import { categories } from '../data/pages'
+import { SocialIcons } from './SocialIcons'
 
 function FooterPostList({
   title,
@@ -19,7 +21,7 @@ function FooterPostList({
             <Link to={postPath(post.id)} className="group flex gap-3">
               <img src={post.image} alt="" className="h-14 w-14 shrink-0 object-cover" />
               <div className="min-w-0">
-                <h4 className="text-sm leading-snug text-white/90 transition group-hover:text-brand">
+                <h4 className="text-sm leading-snug text-white/90 transition group-hover:text-[#7eb6ff]">
                   {post.title}
                 </h4>
                 <time className="mt-1 block text-[11px] text-white/45">{post.date}</time>
@@ -35,14 +37,69 @@ function FooterPostList({
 export function Footer() {
   return (
     <footer className="bg-footer text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 md:grid-cols-2">
-        <FooterPostList title="Trending Post" posts={footerTrending} />
-        <FooterPostList title="Popular Post" posts={footerPopular} />
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-12">
+        <div className="lg:col-span-4">
+          <Link to="/" className="inline-flex items-center" aria-label="Magzone home">
+            <img
+              src="/images/magzone-logo-footer.png"
+              alt="Magzone"
+              width={220}
+              height={70}
+              className="h-11 w-auto object-contain sm:h-12"
+            />
+          </Link>
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
+            Magzone is a UK digital magazine covering culture, technology, travel, health, food and
+            lifestyle — clear stories with a point of view.
+          </p>
+          <SocialIcons className="mt-6 text-white/80" size={16} />
+        </div>
+
+        <div className="lg:col-span-2">
+          <h3 className="mb-4 border-b border-white/10 pb-3 text-sm font-bold tracking-wide text-white uppercase">
+            Explore
+          </h3>
+          <ul className="space-y-2.5 text-sm text-white/70">
+            <li>
+              <Link to="/" className="transition hover:text-white">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog" className="transition hover:text-white">
+                All Blogs
+              </Link>
+            </li>
+            {categories.slice(0, 5).map((category) => (
+              <li key={category.slug}>
+                <Link to={`/category/${category.slug}`} className="transition hover:text-white">
+                  {category.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="lg:col-span-3">
+          <FooterPostList title="Trending" posts={footerTrending} />
+        </div>
+
+        <div className="lg:col-span-3">
+          <FooterPostList title="Popular" posts={footerPopular} />
+        </div>
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-4 text-[11px] text-white/45 sm:flex-row sm:px-6">
-          <p>© {new Date().getFullYear()} Mazgazin2. All rights reserved.</p>
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-[11px] text-white/45 sm:flex-row sm:px-6">
+          <div className="flex items-center gap-3">
+            <img
+              src="/images/magzone-logo-footer.png"
+              alt=""
+              aria-hidden
+              className="h-5 w-auto object-contain opacity-80"
+            />
+            <p>© {new Date().getFullYear()} Magzone. All rights reserved.</p>
+          </div>
           <p>Culture · Tech · Lifestyle</p>
         </div>
       </div>

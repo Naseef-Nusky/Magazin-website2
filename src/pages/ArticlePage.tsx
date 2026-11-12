@@ -56,18 +56,22 @@ export function ArticlePage() {
               {post.title}
             </h1>
             <p className="mt-5 text-[12px] tracking-wide text-muted uppercase">
-              {post.author ? `By ${post.author} · ` : ''}
               {post.date} · {Math.max(4, body.length + 2)} min read
             </p>
           </div>
         </header>
 
         {post.image ? (
-          <div className="mx-auto max-w-5xl px-4 pt-8 sm:px-6">
+          <div className="mx-auto w-full max-w-[1920px] px-0 sm:px-4 sm:pt-8 lg:px-6">
             <img
               src={post.image}
-              alt=""
-              className="aspect-[16/9] w-full object-cover"
+              alt={post.title}
+              width={1920}
+              height={1080}
+              sizes="(max-width: 640px) 100vw, (max-width: 1920px) 100vw, 1920px"
+              className="aspect-video h-auto w-full object-cover object-top sm:rounded-sm"
+              loading="eager"
+              decoding="async"
             />
           </div>
         ) : null}
@@ -80,9 +84,35 @@ export function ArticlePage() {
           ) : null}
 
           <div className="mt-8 space-y-6 text-base leading-8 text-[#333]">
-            {body.map((paragraph) => (
-              <p key={paragraph.slice(0, 48)}>{paragraph}</p>
-            ))}
+            {body.map((paragraph) => {
+              const trimmed = paragraph.trim()
+              const isScore = /^Review score:/i.test(trimmed)
+              const isHeading =
+                !isScore &&
+                paragraph.length < 72 &&
+                !/[.!?]$/.test(trimmed) &&
+                /^[A-Z0-9]/.test(trimmed)
+              if (isScore) {
+                return (
+                  <p
+                    key={paragraph}
+                    className="rounded-sm border border-line bg-[#f7f5f2] px-5 py-4 font-display text-xl font-semibold text-ink"
+                  >
+                    {paragraph}
+                  </p>
+                )
+              }
+              return isHeading ? (
+                <h2
+                  key={paragraph}
+                  className="pt-2 font-display text-2xl font-semibold text-ink"
+                >
+                  {paragraph}
+                </h2>
+              ) : (
+                <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+              )
+            })}
           </div>
 
           <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-y border-line py-6">
@@ -118,10 +148,7 @@ export function ArticlePage() {
                     <h3 className="font-display text-lg font-semibold leading-snug transition group-hover:text-brand">
                       {item.title}
                     </h3>
-                    <p className="mt-2 text-[11px] text-muted uppercase">
-                      {item.author ? `${item.author} · ` : ''}
-                      {item.date}
-                    </p>
+                    <p className="mt-2 text-[11px] text-muted uppercase">{item.date}</p>
                   </div>
                 </Link>
               ))}

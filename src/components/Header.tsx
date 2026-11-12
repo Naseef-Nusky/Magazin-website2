@@ -25,11 +25,13 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <Link to="/" className="inline-flex shrink-0 items-center">
+        <Link to="/" className="inline-flex shrink-0 items-center" aria-label="Magzone home">
           <img
-            src="/images/posts/bg%20removed%20logo.png"
-            alt="Mazgazin2"
-            className="h-10 w-auto object-contain sm:h-12"
+            src="/images/magzone-logo.png"
+            alt="Magzone"
+            width={206}
+            height={65}
+            className="h-9 w-auto object-contain sm:h-11"
           />
         </Link>
 

@@ -3,19 +3,19 @@
 @theme {
   --font-display: "Playfair Display", Georgia, serif;
   --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
-  --color-brand: #e11d2e;
-  --color-brand-dark: #c41626;
-  --color-ink: #1a1a1a;
-  --color-muted: #6b7280;
-  --color-line: #e8e8e8;
-  --color-surface: #f7f7f7;
-  --color-footer: #1c1c1c;
-  --color-tag-blue: #2563eb;
+  --color-brand: #0050a8;
+  --color-brand-dark: #002048;
+  --color-ink: #0f172a;
+  --color-muted: #64748b;
+  --color-line: #e2e8f0;
+  --color-surface: #f1f5f9;
+  --color-footer: #041428;
+  --color-tag-blue: #0050a8;
   --color-tag-green: #16a34a;
   --color-tag-orange: #ea580c;
   --color-tag-purple: #7c3aed;
   --color-tag-teal: #0d9488;
-  --color-ad: #f97316;
+  --color-ad: #0284c7;
 }
 
 @layer base {

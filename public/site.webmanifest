@@ -1,6 +1,6 @@
 {
-  "name": "Mazgazin2",
-  "short_name": "Mazgazin2",
+  "name": "Magzone",
+  "short_name": "Magzone",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#0050a8",
   "background_color": "#ffffff",
   "display": "standalone"
 }

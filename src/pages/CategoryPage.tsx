@@ -1,9 +1,9 @@
 import { Navigate, useParams } from 'react-router-dom'
 import { CultureLayout } from '../components/category/CultureLayout'
-import { FashionLayout } from '../components/category/FashionLayout'
 import { FoodLayout } from '../components/category/FoodLayout'
 import { HealthLayout } from '../components/category/HealthLayout'
 import { LifestyleLayout } from '../components/category/LifestyleLayout'
+import { NewsLayout } from '../components/category/NewsLayout'
 import { TechnologyLayout } from '../components/category/TechnologyLayout'
 import { TravelLayout } from '../components/category/TravelLayout'
 import { getCategoryBySlug } from '../data/pages'
@@ -21,10 +21,10 @@ export function CategoryPage() {
   const props = { category, posts }
 
   switch (category.slug) {
+    case 'news':
+      return <NewsLayout {...props} />
     case 'technology':
       return <TechnologyLayout {...props} />
-    case 'fashion':
-      return <FashionLayout {...props} />
     case 'travel':
       return <TravelLayout {...props} />
     case 'health':

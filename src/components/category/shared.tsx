@@ -2,12 +2,7 @@ import type { Post } from '../../data/articles'
 import { CategoryBadge } from '../CategoryBadge'
 
 export function Meta({ post }: { post: Post }) {
-  return (
-    <p className="mt-2 text-[11px] tracking-wide text-muted uppercase">
-      {post.author ? `${post.author} · ` : ''}
-      {post.date}
-    </p>
-  )
+  return <p className="mt-2 text-[11px] tracking-wide text-muted uppercase">{post.date}</p>
 }
 
 export function Badges({ post }: { post: Post }) {

@@ -1,5 +1,5 @@
 /**
- * Upload all Mazgazin2 local content into Sanity.
+ * Upload all Magzone local content into Sanity.
  * Run from /studio:
  *   npx sanity exec scripts/seedContent.ts --with-user-token
  */
@@ -107,7 +107,7 @@ async function main() {
       _type: 'author',
       name: author.name,
       role: author.role || 'Contributor',
-      bio: `${author.name} writes for Mazgazin2.`,
+      bio: `${author.name} writes for Magzone.`,
     })
     authorIds.set(author.name.toLowerCase(), id)
     console.log(`✓ author ${author.name}`)
@@ -135,7 +135,7 @@ async function main() {
         post.body.length
           ? post.body
           : [
-              `${post.title} is a Mazgazin2 feature for readers who want clarity and context.`,
+              `${post.title} is a Magzone feature for readers who want clarity and context.`,
               'Explore more stories in related categories across the archive.',
             ],
       ),
@@ -149,7 +149,7 @@ async function main() {
     console.log(`✓ post (${uploaded}/${data.posts.length}) ${post.title}`)
   }
 
-  console.log('\nDone. All content uploaded to Magazin 2.')
+  console.log('\nDone. All content uploaded to Magzone.')
 }
 
 main().catch((error) => {

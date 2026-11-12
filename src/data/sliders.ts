@@ -1,97 +1,71 @@
+import { healthPosts, lifestylePosts, newsPosts, technologyPosts, travelPosts } from './articles'
+
 export const heroSlides = [
   {
-    id: 'slide-health',
-    postId: 'hero-main',
-    title: 'Thriving, Not Just Surviving: A Blueprint for a Healthy Lifestyle',
+    id: 'slide-news-1',
+    postId: newsPosts[0].id,
+    title: newsPosts[0].title,
+    category: 'News',
+    to: `/blog/${newsPosts[0].id}`,
+    image: newsPosts[0].image,
+    tone: 'red' as const,
+  },
+  {
+    id: 'slide-health-1',
+    postId: healthPosts[0].id,
+    title: healthPosts[0].title,
     category: 'Health',
-    to: '/blog/hero-main',
-    image:
-      '/images/posts/hero-main.jpg',
+    to: `/blog/${healthPosts[0].id}`,
+    image: healthPosts[0].image,
     tone: 'red' as const,
   },
   {
-    id: 'slide-tech',
-    postId: 'hero-side-3',
-    title: 'AI Tools That Actually Save Creators Time',
-    category: 'Technology',
-    to: '/blog/hero-side-3',
-    image:
-      '/images/posts/hero-side-3.jpg',
-    tone: 'blue' as const,
+    id: 'slide-lifestyle-1',
+    postId: lifestylePosts[0].id,
+    title: lifestylePosts[0].title,
+    category: 'Lifestyle',
+    to: `/blog/${lifestylePosts[0].id}`,
+    image: lifestylePosts[0].image,
+    tone: 'green' as const,
   },
   {
-    id: 'slide-travel',
-    postId: 'edit-1',
-    title: 'Coastal Escapes Worth Booking This Season',
+    id: 'slide-travel-1',
+    postId: travelPosts[0].id,
+    title: travelPosts[0].title,
     category: 'Travel',
-    to: '/blog/edit-1',
-    image:
-      '/images/posts/edit-1.jpg',
+    to: `/blog/${travelPosts[0].id}`,
+    image: travelPosts[0].image,
     tone: 'teal' as const,
-  },
-  {
-    id: 'slide-fashion',
-    postId: 'grid-3',
-    title: 'Fashion Capsules That Travel Light',
-    category: 'Fashion',
-    to: '/blog/grid-3',
-    image:
-      '/images/posts/grid-3.jpg',
-    tone: 'red' as const,
-  },
-  {
-    id: 'slide-culture',
-    postId: 'grid-4',
-    title: 'Music Festivals Shaping Summer Culture',
-    category: 'Culture',
-    to: '/blog/grid-4',
-    image:
-      '/images/posts/grid-4.jpg',
-    tone: 'purple' as const,
   },
 ]
 
 export const categorySlides = [
   {
-    label: 'Technology',
-    to: '/category/technology',
-    image:
-      '/images/posts/hero-side-3.jpg',
+    id: 'cat-news',
+    title: 'News desk',
+    category: 'News',
+    to: '/category/news',
+    image: newsPosts[0].image,
   },
   {
-    label: 'Fashion',
-    to: '/category/fashion',
-    image:
-      '/images/posts/fashion-extra-1.jpg',
-  },
-  {
-    label: 'Travel',
-    to: '/category/travel',
-    image:
-      '/images/posts/edit-1.jpg',
-  },
-  {
-    label: 'Health',
+    id: 'cat-health',
+    title: 'Health',
+    category: 'Health',
     to: '/category/health',
-    image:
-      '/images/posts/hero-main.jpg',
+    image: healthPosts[1].image,
   },
   {
-    label: 'Food',
-    to: '/category/food',
-    image:
-      '/images/posts/food-extra-1.jpg',
-  },
-  {
-    label: 'Culture',
-    to: '/category/culture',
-    image:
-      '/images/posts/grid-4.jpg',
-  },
-  {
-    label: 'Lifestyle',
+    id: 'cat-lifestyle',
+    title: 'Lifestyle',
+    category: 'Lifestyle',
     to: '/category/lifestyle',
-    image:
-      '/images/posts/lifestyle-extra-1.jpg',
+    image: lifestylePosts[1].image,
+  },
+  {
+    id: 'cat-travel',
+    title: 'Travel',
+    category: 'Travel',
+    to: '/category/travel',
+    image: travelPosts[0].image,
   },
 ]

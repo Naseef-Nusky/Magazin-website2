@@ -51,7 +51,6 @@ export function mapSanityPost(doc: SanityPost): Post & {bodyParagraphs?: string[
     title: doc.title || 'Untitled',
     excerpt: doc.excerpt,
     date: formatDate(doc.publishedAt),
-    author: doc.author,
     image: doc.mainImage ? urlFor(doc.mainImage) : '',
     categories: (doc.categories || [])
       .filter((c) => c.title)
