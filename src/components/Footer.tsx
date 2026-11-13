@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { footerPopular, footerTrending, postPath } from '../data/articles'
 import { categories } from '../data/pages'
-import { SocialIcons } from './SocialIcons'
 
 function FooterPostList({
   title,
@@ -52,7 +51,6 @@ export function Footer() {
             Magzone is a UK digital magazine covering culture, technology, travel, health, food and
             lifestyle — clear stories with a point of view.
           </p>
-          <SocialIcons className="mt-6 text-white/80" size={16} />
         </div>
 
         <div className="lg:col-span-2">
